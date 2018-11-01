@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <com.mall.serving.community.view.picviewpager.ViewPager
+        android:id="@+id/message_board_pic_show_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <com.mall.serving.community.view.progresswheel.ProgressWheel
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        ProgressWheel:barColor="@color/blue"
+        ProgressWheel:barLength="60dp"
+        ProgressWheel:barWidth="10dp"
+        ProgressWheel:rimColor="@color/white"
+        ProgressWheel:rimWidth="10dp"
+        ProgressWheel:spinSpeed="3dp"
+        ProgressWheel:textColor="@color/white"
+        ProgressWheel:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal" >
+
+        <Button
+            android:id="@+id/bt_del"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/community_uploadpic_bt_shanchu" />
+
+        <TextView
+            android:id="@+id/picindicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/community_half_transparent_round_shape"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="1/9"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/community_uploadpic_bt_queding" />
+    </RelativeLayout>
+
+</FrameLayout>

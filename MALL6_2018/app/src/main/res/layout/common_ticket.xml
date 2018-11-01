@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/top"
+        layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/layout_width_no_corner"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="北京市 --东城区--博纳国际影城通州店"
+            android:textColor="@color/new_headertop" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#f0f0f0"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cinema_name"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/new_headertop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+        <TextView 
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:background="@color/datebg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:text="注："
+            android:textColor="@color/black_gray"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/datebg"
+            android:padding="5dp"
+            android:text="请核实购买的影院，本码只支持购买的影院使用。"
+            android:textColor="@color/new_headertop" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/datebg"
+            android:padding="5dp"
+            android:text="电影电子通兑票说明：在有效期内可兑换同一影院的普通2D电影票（首映式、明星见面会、vip厅和特殊节日如情人节，圣诞节，平安夜等不可用,特殊影片价格依影院具体情况而定）打印小票仅限当日兑换使用，逾期作废！"
+            android:textColor="@color/new_headertop"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_width_no_corner_with_blue"
+            android:orientation="vertical"
+            android:paddingBottom="1dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/new_headertop"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="电影通兑票"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#259EEA" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="单价（元）"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#259EEA" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="有效期(天)"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#259EEA" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="数量"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#259EEA" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:id="@+id/layout_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/common_ticket_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:divider="#49afef"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:visibility="gone" >
+            </ListView>
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            android:background="@color/new_headertop"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="接收电子券的手机号："
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/layout_width_no_corner_with_blue"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="购买"
+                android:background="@color/price_color"
+                android:textColor="@color/white"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

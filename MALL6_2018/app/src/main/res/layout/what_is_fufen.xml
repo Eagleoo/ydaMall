@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialog_cannot_layout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/textview_rounded_cannot_receive_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textview_round_top_blue"
+            android:gravity="center"
+            android:text="福分"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="\t◎ 〔福分〕是公司对员工发放的一种福利奖励分数。\n\t◎ 〔福分〕是公司对员工的原始股权配额，公司上市后，员工凭系统福分免费兑换公司等额上市原始股权。\n\t◎ 〔福分〕是公司对员工的奖励和升迁依据，不论是月奖、季奖，年奖以及升迁均以此为参考依据。\n\t◎ 任何正式入职的员工都有基础福分（基础福分依岗位不同而异），供职期间依工作表现和相关标准进行福分奖励。\n\t◎〔福分〕只要有在公司供职过程中才有效，离职时福分自动失效（不能转让）。"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/connot_yzm_but"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textview_round_yellow"
+                android:gravity="center"
+                android:text="确  定"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

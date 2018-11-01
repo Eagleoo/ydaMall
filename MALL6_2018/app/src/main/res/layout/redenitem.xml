@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_12"
+        android:background="@drawable/darkredbox1"
+        android:layout_margin="@dimen/space_9"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.mall.view.MoreTextView
+
+                    android:id="@+id/boxidtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="盒子编号："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_15"
+                    app:drawable_src="@drawable/itembh"
+                    app:imageHight="@dimen/space_14"
+                    app:imageWidth="@dimen/space_14"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/space_5"
+                    />
+                <TextView
+                    android:id="@+id/boxid_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="#000000"
+                    android:text="001"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.mall.view.MoreTextView
+                    android:id="@+id/kaiqishijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开启时间："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_15"
+                    app:drawable_src="@drawable/itemsj"
+                    app:imageHight="@dimen/space_14"
+                    app:imageWidth="@dimen/space_14"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/space_5"
+                    />
+                <TextView
+                    android:id="@+id/boxtime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="#000000"
+                    android:text="2017-10-09 10:36:09"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shengyushijian_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <com.mall.view.MoreTextView
+                    android:id="@+id/shengyushijian_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余时间："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_15"
+                    app:drawable_src="@drawable/itemsj"
+                    app:imageHight="@dimen/space_14"
+                    app:imageWidth="@dimen/space_14"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/space_5"
+                    />
+                <TextView
+                    android:id="@+id/boxsurplustime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="#000000"
+                    android:text="4小时56分43秒"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <com.mall.view.MoreTextView
+                    android:id="@+id/moreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红包价值："
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_15"
+                    app:drawable_src="@drawable/itemjz"
+                    app:imageHight="@dimen/space_14"
+                    app:imageWidth="@dimen/space_14"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/space_5"
+                    />
+
+                <TextView
+                    android:id="@+id/boxmoney_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_15"
+                    android:textColor="#000000"
+                    android:text="19.23"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/redbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/itemlwh"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

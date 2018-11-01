@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@color/white" >
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/delete"
+        android:src="@drawable/note_delete"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="李四(成人票)"
+            android:id="@+id/nameandage"
+            android:gravity="center_vertical"/>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:textColor="@color/resutrant"
+            android:textSize="12sp"
+            android:text="12345678901234567"
+            android:id="@+id/zjhm"/>
+    </LinearLayout>
+
+</LinearLayout>

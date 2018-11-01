@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/goods_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/new_yda__top_zanwu" />
+<LinearLayout
+    android:id="@+id/yijiexiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:orientation="vertical" >
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得者："
+                android:textColor="@color/yyrg_shouye_zi"
+                android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得者："
+                android:textColor="@color/yyrg_qianhui"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/huode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得者"
+                android:textColor="@color/yyrg_shouye_lanzi"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="揭晓时间："
+                android:textColor="@color/yyrg_qianhui"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/jiexiao_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获得者："
+                android:textColor="@color/yyrg_qianhui"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/jinxingzhong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/goodsname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="呵呵呵呵"
+            android:textColor="@color/yyrg_shouye_zi"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="价格："
+            android:textColor="@color/yyrg_qianhui"
+            android:textSize="15sp" />
+            <com.mall.yyrg.MyProgressView
+                android:id="@+id/progress"
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" >
+            </com.mall.yyrg.MyProgressView>
+           <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/canyu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="390"
+                                android:textColor="@color/yyrg_progress"
+                                android:textSize="10.0sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已参与人次"
+                                android:textColor="@color/yyrg_qianhui"
+                                android:textSize="10.0sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/zongxu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:text="390"
+                                android:textColor="@color/yyrg_qianhui"
+                                android:textSize="10.0sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:text="总需人次"
+                                android:textColor="@color/yyrg_qianhui"
+                                android:textSize="10.0sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/shengyu"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:text="390"
+                                android:textColor="@color/yyrg_shouye_lanzi"
+                                android:textSize="10.0sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:text="剩余人次"
+                                android:textColor="@color/yyrg_qianhui"
+                                android:textSize="10.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

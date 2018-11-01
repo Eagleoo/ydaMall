@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true"
+            android:isScrollContainer="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/film_image"
+                            android:layout_width="100dp"
+                            android:layout_height="170dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/film" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/film_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="超凡蜘蛛侠2"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/film_special_price"
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/resturant_button_selector"
+                                android:gravity="center"
+                                android:text="特价"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/film_ratimg"
+                                style="@style/rateing_bar_style"
+                                android:layout_width="wrap_content"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center_vertical"
+                                android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+                                android:max="10"
+                                android:numStars="5"
+                                android:rating="2.7" />
+
+                            <TextView
+                                android:id="@+id/rating_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="9.0分"
+                                android:textColor="#cf0908"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="版本："
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/version"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="2D/3D/IMAX 3D"
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="地区："
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/area"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="美国"
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="时长："
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/film_length"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="120分钟"
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="导演："
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/director"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="詹姆士.卡梅隆"
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="top"
+                                android:text="主演："
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/actors"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="安德鲁·加菲尔德, 菲丽希缇·琼斯, 艾玛·斯通   杰米·福克斯,谢琳·伍德蕾,莎"
+                                android:textColor="@color/flim"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/datebg"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <Gallery
+                        android:id="@+id/juzhaoimage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="none"
+                        android:spacing="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/datebg"></LinearLayout>
+                <!-- 剧情 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="20dp"
+                            android:background="@color/headertop"
+                            android:gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="剧情"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/descT"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="  蜘蛛侠此次面临两难抉择。是作为正常人谈情说爱，还是作为超级英雄打凶惩恶。这一部中，女主角格温的命运将会发生大转变……这样的转变也为日后蜘蛛侠的知名女友玛丽的出现创造了契机……
+彼得·帕克（安德鲁·加菲尔德饰）依然很忙，因为他一边要作为正常人谈恋爱（谢琳·伍德蕾饰演的玛丽·简·沃森），一边要变..."
+                            android:textColor="@color/flim"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="@color/datebg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/resturant_button_selector"
+                android:gravity="center"
+                android:text="选择影院"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

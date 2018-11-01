@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d7d7d7"
+        android:tag="frist"
+        android:orientation="vertical">
+
+        <com.stx.xhb.xbanner.XBanner
+            android:id="@+id/topbanner"
+            android:layout_width="match_parent"
+            android:layout_height="543px"
+            app:AutoPlayTime="3000"
+            app:pointNormal="@drawable/dot_focusedline"
+            app:pointSelect="@drawable/dot_normalline"
+            app:pointsPosition="CENTER" />
+    </RelativeLayout>
+</layout>
+

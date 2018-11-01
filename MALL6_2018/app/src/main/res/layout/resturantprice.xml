@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="170dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical|left"
+                android:text="星级价格"
+                android:textColor="@color/resutrant"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="@drawable/resturant_button_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editextborder"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/price0"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="noselected"
+                android:text="经济型"
+                android:textColor="#f76969"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="noselected"
+                android:text="二星"
+                android:textColor="#f76969"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="noselected"
+                android:text="三星"
+                android:textColor="#f76969"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="noselected"
+                android:text="四星"
+                android:textColor="#f76969"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price4"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:tag="noselected"
+                android:text="五星"
+                android:textColor="#f76969"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#dbd8d8"
+                android:gravity="center"
+                android:tag="selected"
+                android:text="不限"
+                android:textColor="#f76969"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+
+            <SeekBar
+                android:id="@+id/ctrl_skbProgress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="1"
+                android:maxHeight="5dp"
+                android:progressDrawable="@drawable/bg_bar"
+                android:thumb="@drawable/thumb_bar"
+                android:layout_gravity="center_vertical" >
+            </SeekBar>
+            <TextView 
+                android:id="@+id/hotel_price_tex"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/resutrant"
+                android:text="0-800元"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

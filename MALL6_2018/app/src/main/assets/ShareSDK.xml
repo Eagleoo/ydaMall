@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <Wechat
+        Id="1"
+        SortId="1"
+        AppId="wxb954fa7174d293d8"
+        AppSecret="c6ead73a9b34d304c615c042ffaeeb65"
+        BypassApproval="false"
+        Enable="true" />
+    
+    <WechatMoments
+        Id="2"
+        SortId="2"
+        AppId="wxb954fa7174d293d8"
+        AppSecret="c6ead73a9b34d304c615c042ffaeeb65"
+        BypassApproval="false"
+        Enable="true" />
+
+	<QQ
+        Id="3"
+        SortId="3"
+		AppId="1103403189"
+		AppKey="s69u655l9PN6wga7"
+        ShareByAppClient="true"
+        Enable="true" />
+    
+    <ShortMessage
+        Id="4"
+        SortId="4"
+        Enable="true" />
+
+</DevInfor>

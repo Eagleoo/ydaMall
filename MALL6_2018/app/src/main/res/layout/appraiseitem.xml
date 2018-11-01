@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp">
+
+            <com.mall.util.CircleImageView
+                android:id="@+id/face"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/headertwo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#484848"
+                        android:textSize="13sp"
+                        tools:text="我是吃货" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text=""
+                        tools:text="ss"
+                        android:textColor="#949494"
+                        android:textSize="8sp" />
+                </RelativeLayout>
+
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    app:clickable="false"
+                    app:starCount="5"
+                    app:starEmpty="@mipmap/ic_star_empty"
+                    app:starFill="@mipmap/ic_star_fill"
+                    app:starImageHeight="14dp"
+                    app:starImagePadding="2dp"
+                    app:starImageWidth="18dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            tools:text="lll" />
+
+
+        <com.jaeger.ninegridimageview.NineGridImageView
+            android:id="@+id/csg_images1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            app:imgGap="4dp"
+            app:showStyle="fill"
+            app:singleImgSize="120dp" />
+
+        <com.mall.yyrg.adapter.MyGridView
+            android:id="@+id/csg_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:horizontalSpacing="@dimen/x5"
+            android:numColumns="5"
+            android:verticalSpacing="@dimen/y2" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="8dp"
+            android:background="#f4f4f4" />
+
+        <LinearLayout
+            android:id="@+id/zuilin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="追加评论"
+                    android:layout_margin="8dp"
+                    />
+
+                <TextView
+                    android:id="@+id/timezui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    tools:text="ss"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#949494"
+                    android:textSize="8sp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/contentzui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:textColor="#323232"
+                android:textSize="15sp"
+                tools:text="lll" />
+
+
+            <com.jaeger.ninegridimageview.NineGridImageView
+                android:id="@+id/csg_images1zui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:visibility="gone"
+                app:imgGap="4dp"
+                app:showStyle="fill"
+                app:singleImgSize="120dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="8dp"
+                android:background="#f4f4f4" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

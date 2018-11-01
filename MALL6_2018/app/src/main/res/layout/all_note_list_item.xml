@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/open_or_close_Liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="15"
+            android:drawableLeft="@drawable/note_rili_jishi_time"
+            android:drawablePadding="5dp"
+            android:text="2014年10月17日 13:57"
+            android:textColor="#808080"
+            android:textSize="15.0sp" />
+
+        <ImageView
+            android:id="@+id/open_or_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:src="@drawable/note_rili_open" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_Liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#ebebeb" />
+
+        <TextView
+            android:id="@+id/context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:text="2014年10月17日 13:57:19"
+            android:textColor="#222222"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f8f8f8" />
+
+</LinearLayout>

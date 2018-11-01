@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.mall.view.carMall.CarModeBean" />
+
+        <variable
+            name="item"
+            type="CarModeBean" />
+
+        <variable
+            name="position"
+            type="int" />
+
+        <variable
+            name="adapter"
+            type="com.mall.view.carMall.CarModeAdapter" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="139px"
+            android:gravity="left"
+            android:onClick="@{(v)->adapter.onItemClick(v,position)}"
+            android:padding="35px"
+            android:text="@{item.itemStr}"
+            android:textSize="48px"
+            app:background="@{item.select?item.selectdr:item.unselectdr}"
+            app:textColor="@{item.select? @color/white : @color/itemuncar}" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mall.view.order.EvaluationOrdersActivity">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.mall.view.order.EvaluationOrdersActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--title-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="#FE4462"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="@{(v)->activity.finish()}"
+                android:paddingLeft="39px"
+                android:paddingRight="39px"
+                android:scaleType="centerInside"
+                android:src="@drawable/community_topback_selector" />
+
+            <TextView
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="评价晒单"
+                android:textColor="#ffffffff"
+                android:textSize="44px" />
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:onClick="@{(v)->activity.submit(v)}"
+                android:paddingLeft="42px"
+                android:paddingRight="42px"
+                android:text="发布"
+                android:textColor="#ffffffff"
+                android:textSize="40px" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="40px"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/shopimage"
+                        android:layout_width="220px"
+                        android:layout_height="220px"
+                        tools:src="@drawable/s25381471_97_97" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32px"
+                        android:layout_marginRight="28px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shopname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="#111111"
+                            android:textSize="40px"
+                            tools:text="14.1英寸轻薄固态四核笔记本电脑手提商务学生游戏上网本分期付" />
+
+                        <TextView
+                            android:id="@+id/shopprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="43px"
+                            android:textColor="#FB0029"
+                            android:textSize="34px"
+                            tools:text="￥2998.00" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3px"
+                    android:layout_marginTop="40px"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50px">
+
+                    <LinearLayout
+                        android:id="@+id/praisesline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="@{(v)->activity.setEvaluationState(v)}"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/praisesiv"
+                            android:layout_width="94px"
+                            android:layout_height="94px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/praiseselected" />
+
+                        <TextView
+                            android:id="@+id/praisestv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20px"
+                            android:text="好评"
+                            android:textColor="#FE4462"
+                            android:textSize="34px" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/averageunesline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="@{(v)->activity.setEvaluationState(v)}"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/averageunesiv"
+                            android:layout_width="94px"
+                            android:layout_height="94px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/averageunselected" />
+
+                        <TextView
+                            android:id="@+id/averageunestv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20px"
+                            android:text="中评"
+                            android:textColor="#ACACAC"
+                            android:textSize="34px" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/badreviewunsline"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="@{(v)->activity.setEvaluationState(v)}"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/badreviewunsiv"
+                            android:layout_width="94px"
+                            android:layout_height="94px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/badreviewunselected" />
+
+                        <TextView
+                            android:id="@+id/badreviewunstv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20px"
+                            android:text="差评"
+                            android:textColor="#ACACAC"
+                            android:textSize="34px" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="360px"
+                    android:layout_marginTop="54px"
+                    android:background="#F7F7F7"
+                    android:gravity="top"
+                    android:hint="感谢您的评价"
+                    android:padding="43px"
+                    android:textColor="#000000"
+                    android:textColorHint="#999999"
+                    android:textSize="40px" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/orderpictures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55px" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</layout>
+

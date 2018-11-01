@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/community_top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f0f0f0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/order_biankuang"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:id="@+id/fi1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:id="@+id/sanyuenei"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/order_biankuang1"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/signal_way"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:background="@color/bg"
+                            android:gravity="center|center_vertical"
+                            android:text="单程"
+                            android:textColor="@color/blue" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/bg" >
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fi2"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:id="@+id/sanyueqian"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/order_biankuang1"
+                            android:orientation="vertical"
+                            android:visibility="invisible" >
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/two_way"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center|center_vertical"
+                            android:text="往返"
+                            android:textColor="@color/bg" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/plane_start_city"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="出发城市"
+                                android:textColor="@color/flim"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/start_city"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="10dp"
+                                android:drawableRight="@drawable/al"
+                                android:gravity="center_vertical"
+                                android:tag="CTU"
+                                android:text="成都"
+                                android:textColor="@color/resutrant"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@color/datebg" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:drawableLeft="@drawable/plane_destination_city"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="到达城市"
+                                android:textColor="@color/flim"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/destination_city"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="10dp"
+                                android:drawableRight="@drawable/al"
+                                android:gravity="center_vertical"
+                                android:tag="pek"
+                                android:text="北京首都"
+                                android:textColor="@color/resutrant"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/switch_start_and_end"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/switch_start_and_end" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/datebg" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:drawableLeft="@drawable/check_in_time"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="出发日期"
+                        android:textColor="@color/flim"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:drawableRight="@drawable/al"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="5月14日"
+                        android:textColor="@color/flim"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/datebg" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reach_date_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:drawableLeft="@drawable/check_out_time"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="返程日期"
+                        android:textColor="@color/flim"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/reach_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:drawableRight="@drawable/al"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="5月15日"
+                        android:textColor="@color/flim"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#f0f0f0" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/economy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/economy_plane_ticket"
+                    android:drawableRight="@drawable/al"
+                    android:gravity="center_vertical"
+                    android:text="经济舱"
+                    android:textColor="@color/resutrant"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- 按钮布局 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/voice_search"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/layoutborder"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/voice_name" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/resturant_button_selector"
+                    android:padding="0dp"
+                    android:text="机票查询"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- banner -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/resturant_banner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp" >
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:id="@+id/dot_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

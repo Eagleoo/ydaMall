@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="200.0dip" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView 
+        android:id="@id/lmsj_detail_product_image_item"
+         android:layout_width="wrap_content" 
+         android:layout_height="wrap_content" 
+         android:layout_alignParentTop="true" />
+    <LinearLayout 
+        android:gravity="center" 
+        android:orientation="horizontal"
+         android:id="@id/lmsj_detail_product_image_line"
+          android:background="#ff000000"
+           android:layout_width="200.0dip" 
+           android:layout_height="30.0dip" 
+           android:layout_alignBottom="@id/lmsj_detail_product_image_item">
+        <TextView 
+            android:textColor="#ffffffff"
+             android:ellipsize="marquee"
+              android:gravity="center" 
+              android:layout_gravity="center" 
+              android:id="@id/lmsj_detail_product_image_name" 
+              android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+                android:text="我是商品名称" 
+                android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

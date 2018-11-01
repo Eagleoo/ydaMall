@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.mall.view.carMall.SelectCarNormActivity" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.mall.view.carMall.SelectCarNormActivity">
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="#FF2145">
+
+            <ImageView
+                android:id="@+id/top_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="@{(v)->activity.finish()}"
+                android:paddingLeft="38px"
+                android:paddingRight="38px"
+                android:src="@drawable/community_topback_selector" />
+
+            <TextView
+                android:id="@+id/handertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="拼车确认"
+                android:textColor="@color/bg"
+                android:textSize="50px" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38px"
+                    android:layout_marginTop="64px"
+                    android:text="请选择你要参与的拼车档次"
+                    android:textColor="#111111"
+                    android:textSize="40px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="77px"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/listmode"
+                        android:layout_width="match_parent"
+                        android:layout_height="139px"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/listmodelin"
+                            android:layout_width="match_parent"
+                            android:layout_height="139px"
+                            android:layout_marginLeft="38px"
+                            android:layout_marginRight="38px">
+
+                            <EditText
+                                android:id="@+id/car_mode"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:hint="请选择你要参与的拼车档次"
+                                android:padding="35px"
+                                android:text="@{activity.selectStr}"
+                                android:textColor="#111111"
+                                android:textColorHint="#B6B6B6"
+                                android:textSize="36px" />
+
+                            <ImageView
+                                android:layout_width="80px"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="center"
+                                android:src="@drawable/down"
+
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="139px"
+                            android:layout_marginLeft="38px"
+                            android:layout_marginRight="38px"
+                            android:onClick="@{(v)->activity.openMenu(v)}" />
+                    </RelativeLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/card_rcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="13px" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/pass_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="139px"
+                    android:layout_marginLeft="38px"
+                    android:layout_marginRight="38px"
+                    android:layout_marginTop="81px"
+                    android:background="@null"
+                    android:hint="请输入交易密码"
+                    android:inputType="textPassword"
+                    android:padding="35px"
+                    android:textColor="#111111"
+                    android:textColorHint="#B6B6B6"
+                    android:textSize="36px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="139px"
+                    android:layout_marginLeft="38px"
+                    android:layout_marginRight="38px"
+                    android:layout_marginTop="81px"
+                    android:background="#FF364E"
+                    android:gravity="center"
+                    android:onClick="@{(v)->activity.submit(v)}"
+                    android:text="确认"
+                    android:textColor="#FFFFFF"
+                    android:textSize="48px" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>
+

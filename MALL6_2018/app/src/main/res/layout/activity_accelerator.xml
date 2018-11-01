@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:background="#FF2145">
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/community_topback_selector"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/handertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="加速器"
+            android:textColor="@color/bg"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jiashuhander"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累计加速天数"
+            android:textColor="#ffffff"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+            <TextView
+                android:id="@+id/day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#FFFC00"
+                android:textSize="25sp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add_js_biankuan1"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y3"
+                    >
+                    <com.mall.view.MoreTextView
+                        android:id="@+id/person_mt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="个人加速"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        />
+                    <ImageView
+                        android:id="@+id/persontitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/redspeeduptitle"
+                        android:layout_toRightOf="@+id/person_mt"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x8"
+                        android:visibility="invisible"
+                        />
+
+                </RelativeLayout>
+
+
+                <com.mall.view.ColorArcProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/person_capb"
+                    app:is_need_content="true"
+                    app:front_color1="#F97F34"
+                    app:front_color2="#FBDD01"
+                    app:front_color3="#F97F34"
+                    app:max_value="7"
+                    app:back_width="10dp"
+                    app:front_width="10dp"
+                    app:total_engle="360"
+                    app:is_need_unit="true"
+                    app:string_unit=""
+                    app:back_color="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/space_5"
+                    android:id="@+id/person_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="当前加速天数:6天"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/personshengyu_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="可开启红包个数:0个"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/person_loadday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="等待加速天数:0天"
+                    android:gravity="center"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_10"
+                    android:layout_marginTop="-9dp"
+                    />
+
+                <TextView
+                    android:id="@+id/person_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="已经加速天数:0天"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/person_rednumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="已经加速天数:0天"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/personinfo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="查看个人明细"
+                    android:textColor="#FDA02B"
+                    android:layout_marginBottom="@dimen/space_9"
+                    />
+
+
+                <TextView
+                    android:id="@+id/personred_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:background="@drawable/butn"
+                    android:paddingBottom="@dimen/space_6"
+
+                    android:paddingTop="@dimen/space_6"
+                    android:textSize="@dimen/text_size_15"
+                    android:layout_marginBottom="@dimen/space_9"
+                    android:text="领取红包盒"
+                    android:paddingLeft="@dimen/space_15"
+                    android:paddingRight="@dimen/space_15"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:background="@drawable/add_js_biankuan1">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/y3"
+                    >
+                    <com.mall.view.MoreTextView
+                        android:id="@+id/team_mt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="部门加速"
+                        android:layout_centerInParent="true"
+                        />
+                    <ImageView
+                        android:id="@+id/teamtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/redspeeduptitle"
+                        android:layout_toRightOf="@+id/team_mt"
+                        android:layout_marginLeft="@dimen/x8"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+                <com.mall.view.ColorArcProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/team_capb"
+                    app:is_need_content="true"
+                    app:front_color1="#F97F34"
+                    app:front_color2="#FBDD01"
+                    app:front_color3="#F97F34"
+                    app:max_value="7"
+                    app:back_width="10dp"
+                    app:front_width="10dp"
+                    app:total_engle="360"
+                    app:is_need_unit="true"
+                    app:string_unit=""
+                    app:back_color="@android:color/darker_gray"
+                    />
+
+
+                <TextView
+                    android:id="@+id/team_loadday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="等待加速天数:0天"
+                    android:gravity="center"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_10"
+                    android:layout_marginTop="-9dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/team_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="已经加速天数:0天"
+                    android:gravity="center"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_10"
+                    />
+
+                <TextView
+                    android:id="@+id/team_rednumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="已经加速天数:0天"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/space_5"
+                    android:id="@+id/team_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="当前加速天数:6天"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/teamshengyu_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="可开启红包个数:0个"
+                    android:textColor="#939393"
+                    android:textSize="@dimen/text_size_13"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/teaminfo_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:text="查看部门明细"
+                    android:textColor="#FDA02B"
+                    android:layout_marginBottom="@dimen/space_9"
+                    />
+
+
+                <TextView
+                    android:id="@+id/teamred_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:background="@drawable/butn"
+                    android:paddingBottom="@dimen/space_6"
+                    android:paddingTop="@dimen/space_6"
+                    android:textSize="@dimen/text_size_15"
+                    android:text="领取红包盒"
+                    android:paddingLeft="@dimen/space_15"
+                    android:paddingRight="@dimen/space_15"
+                    android:layout_marginBottom="@dimen/space_9"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/m1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="真实姓名：" />
+        <TextView android:textColor="#ff737373" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/m2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m1">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="身份证号：" />
+        <TextView android:textColor="#ff737373" android:id="@id/idno" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/m3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m2">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="所在地区：" />
+        <TextView android:textColor="#ff737373" android:id="@id/province" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/m4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m3">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="加盟金额：" />
+        <TextView android:textColor="#ffff0000" android:id="@id/cost" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/m5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m4">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="代理级别：" />
+        <TextView android:textColor="#ff737373" android:id="@id/level" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/m6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m5">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="审批状态：" />
+        <TextView android:textColor="#ffff0000" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/m7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/m6">
+        <TextView android:textColor="#ff737373" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="申请时间：" />
+        <TextView android:textColor="#ff737373" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="" />
+    </LinearLayout>
+</RelativeLayout>

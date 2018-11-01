@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/lmsj_list_item_line"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2.0dip"
+    android:background="@drawable/liner_border_white"
+    android:orientation="horizontal"
+    android:padding="3.0dip">
+
+    <ImageView
+        android:id="@id/lmsj_list_item_logo"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_margin="5.0dip"
+        android:layout_weight="0.8"
+        android:adjustViewBounds="true"
+        android:src="@drawable/zw174" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/lmsj_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5.0dip"
+            android:text="商家名"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@id/lmsj_list_item_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5.0dip"
+            android:text="电话"
+            android:textColor="#ff535353" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@id/lmsj_list_item_cate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="酒店"
+                android:textColor="#ffde9732" />
+
+            <TextView
+                android:id="@id/lmsj_list_item_juli"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:text="计算距离中"
+                android:textColor="#ff535353" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@id/lmsj_list_item_goto"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/gotothat"
+                android:drawablePadding="3.0dip"
+                android:text="就去这"
+                android:textColor="#ff535353" />
+
+            <TextView
+                android:id="@id/lmsj_list_item_mysc"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/mysc"
+                android:drawablePadding="3.0dip"
+                android:text="收藏它"
+                android:textColor="#ff535353" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

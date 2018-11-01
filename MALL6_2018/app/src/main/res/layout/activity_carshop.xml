@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            ><com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/shop_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d7d7d7" /></LinearLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/title_lin"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/toback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35px"
+                android:drawablePadding="15px"
+                android:gravity="center_vertical"
+                android:text="创客商城"
+                android:textColor="#ffffff"
+                android:textSize="45px"
+                app:drawable_src="@drawable/community_topback"
+                app:imageHight="30px" />
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/toSearch"
+                android:layout_width="500px"
+                android:layout_height="63px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="75px"
+                android:background="#ffffff"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="搜索产品"
+                android:textColor="#000000"
+                android:textSize="40px"
+                app:drawable_src="@drawable/search"
+                app:imageLocation="right" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/backtop_iv"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50px"
+            android:layout_marginRight="40px"
+            android:alpha="0.5"
+            android:src="@drawable/scroller" />
+    </RelativeLayout>
+
+
+</layout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update_dialig_yuanjiao_1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#1E90FF"
+        android:textColor="@color/bg"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:text="TextView" />
+    
+<TextView
+        android:id="@+id/update_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:lineSpacingExtra="7dp"
+        android:textColor="#404040"
+        android:textSize="14sp" />
+
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:padding="8dp"
+     android:background="#DEDEDE"
+      >
+     <TextView 
+         android:id="@+id/queding"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/bg"
+         android:layout_centerHorizontal="true"
+         android:text="确   定"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+         android:paddingLeft="20dp"
+         android:paddingRight="20dp"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:background="#66CCFF"
+         />
+     
+ </RelativeLayout>
+</LinearLayout>

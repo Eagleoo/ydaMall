@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:background="@drawable/new_dibu_touming"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/new_dibu_touming"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:background="@drawable/new_dibu_touming"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:background="@drawable/new_dibu_touming"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/console_line_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/new_dibu_touming"
+            android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#DBDBDB"
+    ></LinearLayout>
+           <LinearLayout
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:background="#fdf8f8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mingpian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/card_bu_zi"
+                android:text="名片夹"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/jiaohuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="交换名片"
+                 android:textColor="@color/new_shangc_buqian"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/add_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/hezuo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="找合作"
+                android:textColor="@color/new_shangc_buqian"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/my"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="我的"
+                android:textColor="@color/new_shangc_buqian"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

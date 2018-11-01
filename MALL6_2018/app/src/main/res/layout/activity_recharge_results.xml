@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="#FF2145">
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/community_topback_selector"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="充值结果"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_50"
+        />
+
+    <TextView
+        android:id="@+id/textresule_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜您！充值成功！"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_size_16"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/textresule_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜您！充值成功！"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_size_12"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="#9C9C9C"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            />
+        <com.mall.view.MoreTextView
+            android:id="@+id/zhuanruxiaofeiquan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:drawable_src="@drawable/xfq"
+            android:text="转入消费券"
+            android:textColor="#9C9C9C"
+            android:drawablePadding="@dimen/space_8"
+            android:background="@drawable/boxwhiteright"
+           android:paddingTop="@dimen/space_15"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingRight="@dimen/space_25"
+            android:paddingLeft="@dimen/space_25"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_13"
+            android:gravity="center"
+            app:imageHight="@dimen/space_10"
+            app:imageWidth="@dimen/space_10"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            />
+        <com.mall.view.MoreTextView
+            android:id="@+id/toredbox_mtv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:drawable_src="@drawable/hbh"
+            android:text="封入红包盒"
+            android:textColor="#9C9C9C"
+            android:drawablePadding="@dimen/space_8"
+            android:background="@drawable/boxwhiteright"
+            android:paddingTop="@dimen/space_15"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingRight="@dimen/space_25"
+            android:paddingLeft="@dimen/space_25"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size_13"
+            android:gravity="center"
+            app:imageHight="@dimen/space_10"
+            app:imageWidth="@dimen/space_10"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.2"
+            />
+        
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tuohuanhuo_shuom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_border_white"
+            android:lineSpacingExtra="3dp"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#717070"/>
+    </ScrollView>
+
+</LinearLayout>

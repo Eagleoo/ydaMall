@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@id/classListTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            layout="@layout/top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classListTop"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@id/qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏名称：" />
+
+        <Spinner
+            android:id="@id/qq_p_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q1"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@id/qb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏类型：" />
+
+        <Spinner
+            android:id="@id/qq_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q2"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/qc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面       值：" />
+
+        <TextView
+            android:id="@id/qq_mz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q3"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/qd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单       价：" />
+
+        <TextView
+            android:id="@id/qq_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q4"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/qe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数       量：" />
+
+        <Spinner
+            android:id="@id/qq_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q5"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@id/qf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总       价：" />
+
+        <TextView
+            android:id="@id/qq_count_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/q7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q6"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@id/qq_commitBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="开始充值" />
+    </LinearLayout>
+
+</RelativeLayout>

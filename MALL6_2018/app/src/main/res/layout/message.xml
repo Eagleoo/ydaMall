@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/m1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            layout="@layout/top" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/messageList"
+        android:divider="#ececec"
+        android:dividerHeight="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/m1" />
+
+</RelativeLayout>

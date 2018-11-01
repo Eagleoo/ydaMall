@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/cornerborder"
+                    android:gravity="center_vertical"
+                    android:hint="空间名称/手机号码"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/speak"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="30dp"
+                    android:padding="3dp"
+                    android:src="@drawable/speak" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/sbtn_bule" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/order_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/office_down"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/office_order"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="由高到低"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/order_biankuang"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fi1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/order_biankuang1"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/bg"
+                    android:gravity="center"
+                    android:tag="selected"
+                    android:text="会员排行"
+                    android:textColor="@color/headertop"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#f0f0f0"
+                android:gravity="center_vertical"></LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fi2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="会员增长排行"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:background="#f0f0f0"
+                android:gravity="center_vertical"></LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fi3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:tag="selected"
+                    android:text="最新加入"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mall.serving.community.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/refreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:id="@id/m1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classListTop"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/before_id"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="真实姓名："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/mname"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m1"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+              android:id="@+id/before_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="性       别："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/msex"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m2"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+              android:id="@+id/before_js"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="联系电话："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/mphone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m3"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+              android:id="@+id/before_tjr"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="系统角色："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/mlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m4"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+              android:id="@+id/before_zsr"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="注册时间："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/mdate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m5"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="所属区域："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@+id/mquyi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+</RelativeLayout>

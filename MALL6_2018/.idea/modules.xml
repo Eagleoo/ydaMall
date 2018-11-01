@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MALL6_2017.iml" filepath="$PROJECT_DIR$/.idea/MALL6_2017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alerter/alerter.iml" filepath="$PROJECT_DIR$/alerter/alerter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleindicator/circleindicator.iml" filepath="$PROJECT_DIR$/circleindicator/circleindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fiftyshadesof/fiftyshadesof.iml" filepath="$PROJECT_DIR$/fiftyshadesof/fiftyshadesof.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xbanner/xbanner.iml" filepath="$PROJECT_DIR$/xbanner/xbanner.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="#00000000"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人加速方案描述"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y16"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:layout_below="@+id/title"
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y16"
+            android:layout_marginRight="@dimen/x8"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_gravity="center"
+            android:text="\t\t一、红包盒自然开启时间是每七天开启一个。
+\t\t二、创客分享的会员充值，可提前（加速）开启红包盒。
+\t\t三、加速计算公式：【（分享的会员充值金额÷创客未打开红包豆总额）*7天】。
+\t\t四、当加速天数小于开启下一个红包盒剩余天数时，会一直累计到符合加速天数的时间为止。
+\t\t五、当加速天数等于或大于开启下一个红包盒剩余天数时，次日会立即开启一个或多个红包盒，多余天数会继续保留等待下一次加速。
+"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross"
+     android:layout_above="@+id/lin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x10"
+        />
+
+
+
+</RelativeLayout>

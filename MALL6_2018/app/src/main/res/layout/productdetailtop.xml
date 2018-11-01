@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/top_top"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:layout_gravity="center_vertical"
+    android:background="#FF4462"
+    android:orientation="horizontal"
+    android:paddingLeft="3.0dip"
+    android:paddingRight="3.0dip" >
+
+    <ImageView
+        android:id="@id/topback"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|center"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="20.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/topback" />
+
+    <TextView
+        android:id="@id/topCenter"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="商品详情"
+        android:singleLine="true"
+        android:textColor="#ffffffff"
+        android:textSize="20.0dip"
+        />
+
+    <TextView
+        android:id="@id/toprightbg"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_weight="0.3"
+        android:background="#ffa30700"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="10.0sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/product_detail_new_share"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:paddingLeft="5.0dip"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:paddingRight="5.0dip"
+        android:src="@drawable/sharecoll3" />
+
+    <ImageView
+        android:id="@id/product_detail_new_collect"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+         android:layout_gravity="center"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:src="@drawable/sharecoll6" />
+
+</LinearLayout>

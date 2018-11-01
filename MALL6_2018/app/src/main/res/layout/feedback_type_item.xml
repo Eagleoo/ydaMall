@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner_border_white_no_fillet"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#f0f0f0"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:text="选择类型"
+                android:textColor="#535353" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/feedback_item_app"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/liner2_bottom_border"
+                android:padding="10dp"
+                android:text="App功能"
+                android:textColor="#535353" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/feedback_item_reg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/liner2_bottom_border"
+                android:padding="10dp"
+                android:text="注册问题"
+                android:textColor="#535353" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/feedback_item_login"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/liner2_bottom_border"
+                android:padding="10dp"
+                android:text="登录功能"
+                android:textColor="#535353" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/feedback_item_community"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/liner2_bottom_border"
+                android:padding="10dp"
+                android:text="互动社区"
+                android:textColor="#535353" >
+            </TextView>
+            <TextView
+                android:id="@+id/feedback_item_order"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/liner2_bottom_border"
+                android:padding="10dp"
+                android:text="订单问题"
+                android:textColor="#535353" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/feedback_item_other"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:text="其他"
+                android:textColor="#535353" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:id="@id/itemLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3.0dip"
+        android:layout_marginTop="3.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/detailItemType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="注册赠送"
+                android:textColor="#ff535353"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@id/detailItemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="2013-05-02 16:24:23"
+                android:textColor="#c4c4c4"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@id/detailItemMoney"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical|right"
+            android:text="+0.00"
+            android:textColor="#ffd06d" />
+    </LinearLayout>
+
+</LinearLayout>

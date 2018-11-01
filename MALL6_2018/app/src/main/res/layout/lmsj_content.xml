@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/lmsj_frame_emptyView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="对不起没有找到联盟商家"
+        android:textColor="#535353"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@id/lmsj_frame_lmsjList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="#ffeeeeee"
+        android:cacheColorHint="#ffeeeeee"
+        android:divider="#ffeeeeee"
+        android:dividerHeight="5.0dip"
+        android:fadingEdge="none"
+        android:isScrollContainer="true"
+        android:layoutAnimation="@anim/list_item_anim"
+        android:listSelector="#ffeeeeee"
+        android:overScrollMode="never"
+        android:scrollingCache="true" />
+
+</FrameLayout>

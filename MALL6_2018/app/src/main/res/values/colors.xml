@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme Colors -->
+    <color name="gallery_blue">#49AFEF</color>
+    <color name="maincolor">#49AFEF</color>
+
+    <color name="theme_white_primary">#FFFFFF</color>
+    <color name="theme_white_dark">#FFFFFF</color>
+    <color name="theme_white_accent">#000000</color>
+
+    <color name="theme_blue_primary">#2196F3</color>
+    <color name="theme_blue_dark">#1976D2</color>
+    <color name="theme_blue_accent">#FF4081</color>
+
+    <color name="theme_orange_primary">#FF5722</color>
+    <color name="theme_orange_dark">#E64A19</color>
+    <color name="theme_light_blue_accent">#FF4081</color>
+
+    <color name="theme_cyan_primary">#00BCD4</color>
+    <color name="theme_cyan_dark">#0097A7</color>
+    <color name="theme_cyan_accent">#FF4081</color>
+
+    <color name="theme_green_primary">#4CAF50</color>
+    <color name="theme_green_dark">#388E3C</color>
+    <color name="theme_green_accent">#FF4081</color>
+
+    <color name="theme_teal_primary">#009688</color>
+    <color name="theme_teal_dark">#00796B</color>
+    <color name="theme_teal_accent">#FF4081</color>
+
+    <color name="theme_red_primary">#da4336</color>
+    <color name="theme_red_dark">#b93221</color>
+    <color name="theme_red_accent">#3D5AFE</color>
+
+    <color name="theme_pink_primary">#E91E63</color>
+    <color name="theme_pink_dark">#C2185B</color>
+    <color name="theme_pink_accent">#3D5AFE</color>
+
+    <color name="theme_purple_primary">#673AB7</color>
+    <color name="theme_purple_dark">#512DA8</color>
+    <color name="theme_purple_accent">#FF4081</color>
+
+    <color name="theme_grey_primary">#616161</color>
+    <color name="theme_grey_dark">#424242</color>
+    <color name="theme_grey_accent">#00E676</color>
+
+    <color name="theme_black_primary">#2A2A2F</color>
+    <color name="theme_black_dark">#151515</color>
+    <color name="theme_black_accent">#FF4081</color>
+
+    <color name="theme_brown_primary">#785447</color>
+    <color name="theme_brown_dark">#5C3F36</color>
+    <color name="theme_blown_accent">#785447</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+
+    <color name="bg">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_light">#aaffffff</color>
+    <color name="light_gray">#ffe6e6e6</color>
+    <color name="black">#ff000000</color>
+    <color name="background_color">#ffd1dce9</color>
+    <color name="bg_with_gray">#f6f6f6</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="status_view">#50000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="red">#fe0202</color>
+    <color name="TextColorBlack">#ff000000</color>
+    <color name="TextColorWhite">#ffffffff</color>
+    <color name="TextColorGray">#ff505050</color>
+    <color name="TextColorRed">#ffe26926</color>
+    <color name="BgColor">#ffd1dce9</color>
+    <color name="sliding_menu_body_background">#fff5f5f5</color>
+    <color name="light_black">#616161</color>
+    <color name="red2">#ff3838</color>
+    <color name="black2">#4a4a4a</color>
+    <color name="blue_light_more">#f8fcfe</color>
+    <color name="deep_red">#f00052</color>
+
+    <!-- 双色球 -->
+    <color name="red_ball">#d41817</color>
+    <color name="blue_ball">#3234fd</color>
+    <color name="gray_text">#989898</color>
+    <color name="gray_backgroud">#ffe0e0e0</color>
+    <color name="black_gray">#515151</color>
+    <color name="pink">#f65656</color>
+    <color name="headertop">#49afef</color>
+    <color name="resutrant">#6c6c6c</color>
+    <color name="datebg">#f2f2f2</color>
+    <color name="flim">#545353</color>
+    <color name="xuanzeqian">#cf0000</color>
+    <color name="biaogehui">#fde5e3</color>
+    <color name="transparent_background2">#99000000</color>
+
+    <!-- 网络电话 -->
+    <color name="voip_blue_top">#2498e3</color>
+    <color name="voip_index_bg">#35373f</color>
+    <color name="voip_index_bg_checked">#25272a</color>
+    <color name="voip_index_text">#3c3c3c</color>
+    <color name="voip_account_text">#2498e2</color>
+    <color name="voip_index_text_checked">#17b1e3</color>
+    <color name="voip_bg">#f4f4f4</color>
+    <color name="voip_light_blue">#ddf0fe</color>
+    <!-- 订单管理 -->
+    <color name="qianhui">#DBDBDB</color>
+    <color name="new_xiaozi">#8c8c8c</color>
+    <color name="new_dazi">#5e5c5c</color>
+    <color name="new_shangc_jingpd">#7f7f7f</color>
+    <color name="new_shangc_jingpm">#bdbdbd</color>
+    <color name="new_shangc_buqian">#5e5c5c</color>
+    <color name="new_shangc_buhou">#f37d90</color>
+    <color name="new_my_color">#686666</color>
+    <color name="new_goods_list">#e64461</color>
+    <color name="new_headertop">#49afef</color>
+    <color name="user_list_public_bg">#e5e6e7</color>
+    <!-- 一元热购 -->
+    <color name="yyrg_shouye_zi">#4a4a4a</color>
+    <color name="yyrg_shouye_shijian">#ffae00</color>
+    <color name="yyrg_shouye_lanzi">#23aafe</color>
+    <color name="yyrg_qianhui">#9a9a9a</color>
+    <color name="yyrg_progress">#FE0000</color>
+    <color name="yyrg_pro_beij">#E4E2E3</color>
+    <color name="yyrg_shaidan">#c0656463</color>
+    <color name="yyrg_jiexiao">#f0efef</color>
+    <color name="yyrg_topcolor">#f37d90</color>
+    <color name="yyrg_message_bu">#fdf8f8</color>
+    <color name="yyrg_my_shenfen">#f4637a</color>
+    <color name="LightGray">#efefef</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="new_page_button">#ff2145</color>
+    <color name="shenhong">#cd0000</color>
+    <color name="yyrg_chengse">#fc5a00</color>
+    <color name="yyrg_shenhei">#131313</color>
+    <color name="yyrg_no_buy">#a6a6a6</color>
+    <color name="price_color">#fb5a00</color>
+    <color name="newgreen">#5ea91b</color>
+    <color name="js_xiaozi">#535353</color>
+    <color name="js_tx_zi1">#282828</color>
+    <color name="js_tx_zi2">#FD6102</color>
+    <color name="js_bcak1">#CDCDCD</color>
+    <color name="calendar_background">#ffffff</color>
+    <color name="selection">#b1dce2ff</color>
+    <color name="calendar_zhe_day">#49afef</color>
+    <color name="event_center">#ff6bd697</color>
+    <color name="noMonth">#c0c0c0</color>
+    <color name="noMonthBlack">#6c6c6c</color>
+    <!-- 周六 -->
+    <color name="text_6">#FFf3feff</color>
+    <!-- 周日 -->
+    <color name="text_7">#FFfff1f2</color>
+    <!-- 非当月日期颜色 -->
+    <color name="frame">#ffffff</color>
+    <color name="Text">#603b07</color>
+    <color name="ToDayText">#ff49afef</color>
+    <color name="lightyellow">#49afef</color>
+    <color name="yyrg_shenhong">#F34C7F</color>
+    <!-- 亮黄色 -->
+
+    <style name="edit_clock_layout">
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">7dip</item>
+        <item name="android:paddingTop">8dip</item>
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance"></style>
+
+    <style name="TextAppearance.EditEvent_Label">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">2dip</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_homeTime">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingRight">2dip</item>
+    </style>
+
+    <color name="fufen_zi1">#4F4F4F</color>
+    <color name="fufen_beijing1">#F9F9F9</color>
+    <!-- 名片通 -->
+    <color name="card_centre_back">#3CC7F0</color>
+    <color name="card_centre_zi">#515151</color>
+    <color name="card_shenhei">#4D4D4D</color>
+    <color name="card_qianhei">#8B8B8B</color>
+    <color name="card_bu_zi">#2298e0</color>
+
+    <!-- 互动社区 -->
+
+    <color name="gray">#a5a5a5</color>
+    <color name="blue">#2498e2</color>
+    <color name="blue_deep">#005b7f</color>
+    <color name="green">#7ddb9d</color>
+    <color name="yellow">#fe9920</color>
+    <color name="green_deep">#ffaf0d</color>
+    <color name="yellow_deep">#67b100</color>
+    <color name="main_bg">#f0f0f0</color>
+    <color name="main_light_bg">#f6f6f6</color>
+    <color name="main_deep_bg">#e1e1e1</color>
+    <color name="light_blue">#ddf0fe</color>
+    <color name="half_transparent">#5000</color>
+    <color name="half_transparent_deep">#c000</color>
+    <color name="blue_Information">#3cc7f0</color>
+    <color name="pink_age">#f798bc</color>
+    <color name="tag1">#fe9c7e</color>
+    <color name="tag2">#f7cb74</color>
+    <color name="tag3">#96c3fe</color>
+    <color name="tag4">#fdbf44</color>
+    <color name="tag5">#8bd5a4</color>
+    <color name="tag6">#6fbef7</color>
+    <color name="green_query">#7ad487</color>
+    <color name="purplish_red">#fd6246</color>
+    <color name="new_duihuan">#e5e5e5</color>
+    <color name="puzzle_hilite">#ff000000</color>
+    <color name="puzzle_light">#64c6d4ef</color>
+    <color name="puzzle_selected">#64ff8000</color>
+    <color name="mywhite">#e9e9e9</color>
+    <color name="myyellow">#ffc322</color>
+
+    <drawable name="new_order6">#ffffff</drawable>
+    <drawable name="new_order7">#2498e2</drawable>
+
+    <color name="logo_text_color">#ff7f7f7f</color>
+    <color name="vip_show_text_color">#525252</color>
+    <color name="vip_show_goodness_text_color">#525252</color>
+    <color name="side_color">#AEAEAE</color>
+    <color name="lightgray">#f0f0f0</color>
+    <color name="sidebar_gray">#00bfbfbf</color>
+    <color name="gray_div">#d9d9d9</color>
+    <color name="sidebar_dialog">#808080</color>
+
+    <color name="itemuncar">#787878</color>
+
+</resources>

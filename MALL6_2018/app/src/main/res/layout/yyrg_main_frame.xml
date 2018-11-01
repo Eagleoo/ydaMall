@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:background="@drawable/new_dibu_touming"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/new_dibu_touming"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:background="@drawable/new_dibu_touming"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:background="@drawable/new_dibu_touming"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/console_line_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/new_dibu_touming"
+            android:orientation="horizontal" >
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:background="#fdf8f8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/all_goods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/yyrg_sysp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/new_shangc_buqian"
+                android:text="所有商品"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/hd_jiexiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/yyrg_hdjx"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="活动揭晓"
+                 android:textColor="@color/new_shangc_buqian"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/yyrg_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/yyrg_shouye_1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="1元购首页"
+                android:textColor="@color/new_shangc_buhou"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shopping_cart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/new_shangc_cart"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="@color/new_shangc_buqian"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/my_regou"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/yyrg_wdrg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="我的热购"
+                android:textColor="@color/new_shangc_buqian"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</TabHost>

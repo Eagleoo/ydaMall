@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="top"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="60.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="10.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee_redbg"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip">
+
+                    <TextView
+                        android:id="@+id/proxy_shopsite_myjiaose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="会员角色：普通会员"
+                        android:textColor="#535353"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/proxy_shopsite_jyjiaose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:text="系统角色：无"
+                        android:textColor="#535353"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_reg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔注册会员〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="天天有红包，日日有惊喜，分享赚大钱"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_vip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔VIP会员〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="享受会员全部权益，引入会员和商品终生获利"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔见习创客〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="低成本准创业角色，成为合格创业者前的见习角色"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_site"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔城市经理〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="给商家安装大数据系统，成为与商家一起发展的股东"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_qu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔城市总监〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="成为创业服务专家，辅导更多城市经理取得创业成功"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_lmsj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔联盟商家〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="锁定客户，绑定员工，永享大数据时代产生的跨界收益"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_shi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请城市运营中心"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="为城市经理、城市总监、联盟商家提供服务与管理"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shengji_site_site"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请升级〔城市经理〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="自己的移动O2O创业系统，锁定数据、倍增财富大系统"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_updateProxy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请升级〔城市总监〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="自己的移动电子商务平台，用于打造自己团队的大系统"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔大学生空间〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="中国第一个为在校大学生提供创业系统的创业平台"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔移动创客〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="赠送商圈系统，永享联盟商家充值收益。"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting_business_cyds"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔创业大使〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="创业包，让您用创业系统快速绑定激情创业者！"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔城市经理（众筹）〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="自己的移动O2O创业系统，锁定数据、倍增财富大系统"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/proxy_site_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/myfollow" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="申请〔远大购物卡〕"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="3.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="集购物消费、充值返现于一体的电子购物卡"
+                            android:textColor="#ff535353"
+                            android:textSize="11.0sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_arrow" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/proxy_site_site1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/liner2_border_eeeeee"
+                        android:orientation="horizontal"
+                        android:padding="10.0dip">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10.0dip"
+                            android:src="@drawable/myfollow" />
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="申请〔幸福大中华双创计划〕"
+                                android:textColor="#ff333333"
+                                android:textSize="16.0sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginTop="3.0dip"
+                                android:gravity="center_vertical"
+                                android:includeFontPadding="false"
+                                android:text="全力支持转业退伍军人创业创新，赠送城市经理创业大系统"
+                                android:textColor="#ff535353"
+                                android:textSize="11.0sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_arrow" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="申请其他角色..."
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

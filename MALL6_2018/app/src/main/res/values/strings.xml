@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="qv_add">+</string>
+    <string name="qv_remove">-</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="app_name1">通用版下拉刷新上拉加载控件</string>
+    <string name="head">这里是HeadView</string>
+    <string name="moneyhint"><font size="15">请输入提现金额</font></string>
+
+    <string name="app_name">安全支付</string>
+    <string name="remote_call_failed">访问远程支付宝错误！</string>
+    <string name="weibo_upload_content">分享图片</string>
+    <string name="wechat_client_inavailable">目前您的微信版本过低或未安装微信，需要安装微信才能使用</string>
+    <string name="google_plus_client_inavailable">Google+ 版本过低或者没有安装，需要升级或安装Google+才能使用！</string>
+    <string name="qq_client_inavailable">QQ 版本过低或者没有安装，需要升级或安装QQ才能使用！</string>
+    <string name="pinterest_client_inavailable">Pinterest版本过低或者没有安装，需要升级或安装Pinterest才能使用！</string>
+    <string name="instagram_client_inavailable">Instagram版本过低或者没有安装，需要升级或安装Instagram才能使用！</string>
+    <string name="yixin_client_inavailable">目前您的易信版本过低或未安装易信，需要安装易信才能使用</string>
+    <string name="sinaweibo">新浪微博</string>
+    <string name="tencentweibo">腾讯微博</string>
+    <string name="qzone">QQ空间</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechatmoments">微信朋友圈</string>
+    <string name="wechatfavorite">微信收藏</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="renren">人人网</string>
+    <string name="kaixin">开心网</string>
+    <string name="email">邮件</string>
+    <string name="shortmessage">信息</string>
+    <string name="sohumicroblog">搜狐微博</string>
+    <string name="sohusuishenkan">搜狐随身看</string>
+    <string name="neteasemicroblog">网易微博</string>
+    <string name="douban">豆瓣</string>
+    <string name="youdao">有道云笔记</string>
+    <string name="evernote">印象笔记</string>
+    <string name="linkedin">Linked In</string>
+    <string name="googleplus">Google+</string>
+    <string name="foursquare">FourSquare</string>
+    <string name="qq">QQ</string>
+    <string name="pinterest">Pinterest</string>
+    <string name="flickr">Flickr</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="vkontakte">VK</string>
+    <string name="instagram">Instagram</string>
+    <string name="yixin">易信</string>
+    <string name="yixinmoments">易信朋友圈</string>
+    <string name="share_to_qzone">分享到QQ空间</string>
+    <string name="incentive_title">分享有奖</string>
+    <string name="failed_to_start_incentive_page">无法打开“分享有奖页面”</string>
+    <string name="download_faield">下载失败</string>
+    <string name="cancel">取消</string>
+    <string name="finish">完成</string>
+    <string name="sharing">分享操作正在后台进行…</string>
+    <string name="share_to">分享到</string>
+    <string name="share">分享</string>
+    <string name="multi_share">图文分享</string>
+    <string name="share_completed">分享成功</string>
+    <string name="share_canceled">分享已取消</string>
+    <string name="select_one_plat_at_least">请选择一个目标平台</string>
+    <string name="list_friends">%s的朋友</string>
+    <string name="share_failed">分享失败</string>
+    <string name="refreshing">刷新中…</string>
+    <string name="red_area">红色区</string>
+    <string name="blue_area">蓝色区</string>
+    <string name="selection_red_ball">（至少选择六个红球）</string>
+    <string name="selection_blue_ball">（至少选择一个蓝球）</string>
+    <string name="machine_choose">机选</string>
+    <string name="betting">投注</string>
+    <string name="add_manpower_number">增加人工选号</string>
+    <string name="add_machine_number">增加1注机选</string>
+    <string name="order_list">订单列表</string>
+    <string name="identity_information_explain">真实身份信息是大奖领取的唯一凭证，所有请如实准确的 填写您的身份信息，填写后真实姓名不可更改。</string>
+    <string name="supplement_identity_information">补充身份信息</string>
+    <string name="real_name">真实姓名：</string>
+    <string name="ID_number">身份证号：</string>
+    <string name="phone_number">手机号码：</string>
+    <string name="protect_question">设置身份信息保护问题</string>
+    <string name="choose_question">选择问题：</string>
+    <string name="choose_movie">你喜欢的电影？</string>
+    <string name="set_answer">设置答案：</string>
+    <string name="submit_information">提交信息</string>
+    <string name="affirm_pay">确认支付</string>
+    <string name="rules">《<u>彩票投注规则</u>》</string>
+    <string name="agreen">我已阅读并同意</string>
+    <string name="sure">确定</string>
+    <string name="red_ball">红球：</string>
+    <string name="blue_ball">蓝球：</string>
+    <string name="choose_number">请选择随机选球数量</string>
+    <string name="select_straight">直选</string>
+    <string name="select_drag">胆拖</string>
+    <string name="add_number_basket">加入号码篮</string>
+    <string name="play_way_introduce" formatted="false">开奖时间：
+        \n每周二、四、日晚21:30开奖，单住最高可中500万，每周三期，开奖号码通过摇奖方式产生，中国教育电视台对开奖进行现场直播。
+        \n玩法规则：
+        \n6个红球+1个蓝球=1注(2元)
+        \n奖项设置：
+        \n一等奖(当期高等奖奖金的70%和奖池中累积的奖金之和)：
+        \n全部6个红球+1个蓝球相同
+        \n二等奖(当期高等奖奖金的30%)：
+        \n全部6个红球相同
+        \n三等奖(3000元)：
+        \n任意5个红球+1个蓝球相同
+        \n四等奖(200元)：
+        \n任意5个红球或任意4个红球+1个蓝球相同
+        \n五等奖(10元)：
+        \n任意4个红球或任意3个红球+1个蓝球相同
+        \n六等奖(5元)：
+        \n蓝球相同(有无红球相同均可)</string>
+    <string name="voip_call_way"><u>>>设置呼叫方式 </u></string>
+    <string name="voip_help_center"><u>帮助中心 </u></string>
+    <string name="title_activity_electric_card">我的电子名片</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_hotel_detail">酒店详情</string>
+    <string name="title_activity_common_ticket">CommonTicket</string>
+    <!-- 比较通用的字段 -->
+    <string name="new_note">添加</string>
+    <string name="delete">删除</string>
+    <string name="delete_note">您确定要删除吗?</string>
+    <!-- 主界面的菜单 -->
+    <string name="new_folder">新建文件夹</string>
+    <!-- 文件夹界面下的菜单 -->
+    <string name="edit_folder_title">名称</string>
+
+    <!-- Button组件显示 的字符串 -->
+    <string name="Ok">OK</string>
+
+    <!-- 比较通用的字段 -->
+
+    <string name="delete_all">删除全部</string>
+    <string name="save">保存</string>
+    <string name="delete_all_note">确定删除全部便签和文件夹?</string>
+    <string name="save_success">保存成功</string>
+    <string name="delete_success">删除成功</string>
+    <string name="save_failed">内容为空，保存失败!</string>
+    <string name="list_is_empty">列表为空，删除失败!</string>
+    <string name="selected_is_empty">选择为空，删除失败!</string>
+    <string name="Deleting">正在删除，请稍等！</string>
+    <string name="pleasechoosenote">请选择便签</string>
+    <string name="listis_empty">列表为空</string>
+    <string name="tel">拨打电话</string>
+    <string name="web">浏览网页</string>
+    <string name="mynote">标签</string>
+    <string name="note_link_other">Open map</string>
+    <!-- 菜单 -->
+    <string name="movetoFolder">移进文件夹</string>
+    <string name="moveoutFolder">移出文件夹</string>
+    <string name="setAlarm">设置记事提醒</string>
+    <string name="toast_add_fail">达到便签数目上限，请删除部分后重试！</string>
+    <string name="toast_edit_outbound">达到编辑输入字数上限，请删除部分后重试！</string>
+    <string name="no_folder_found">不存在文件夹!</string>
+    <string name="folder_add_fail">请输入文件夹名！</string>
+    <string name="start_alarm">开启记事提醒</string>
+    <string name="alarm_date_setting">记事提醒日期设置</string>
+    <string name="alarm_time_setting">记事提醒时间</string>
+    <string name="alarm_is_vibrate">震动记事提醒</string>
+    <string name="alarm_rings">闹钟铃声</string>
+    <string name="set_time_frist">请先设置提醒时间！</string>
+    <string name="set_date_frist">请先设置提醒日期！</string>
+    <string name="set_date_and_time_frist">请先设置提醒日期和时间！</string>
+    <string name="date_time_setted">已经有相同时间的提醒设置，请重新设置时间！</string>
+    <string name="set_alarm_ringtone">设置提醒铃声</string>
+    <string name="default_rings_name">默认铃声</string>
+    <string name="silent">静音</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <!-- Button组件显示 的字符串 -->
+
+
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">便签记事提醒</string>
+    <!-- Text to display in the notification ticker and label -->
+    <string name="alarm_notify_snooze_label">记事提醒暂停</string>
+    <!-- Text to display in the notification when the alarm has been snoozed -->
+    <string name="alarm_notify_snooze_text">记事提醒通知，点击取消！</string>
+    <!--
+         Toast that appears after Alarm is snoozed from the Alarm
+         dialog. Says the alarm will snooze for xxx minutes.
+         
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <string name="alarm_alert_snooze_set">记事提醒关闭.</string>
+    <string name="notify_ticker">闹钟事件！</string>
+    <string name="Note_Alarm_Notify">记事提醒通知 !</string>
+    <string name="set_time_fail">设定时间失败</string>
+    <string name="search_hint">搜索便签</string>
+    <string name="search_settings_description">添加</string>
+    <string name="noteseligible">没有找到符合条件的提醒</string>
+    <string name="Thisfolderalreadyexists">文件夹已存在,请重新输入!</string>
+    <string name="Refresh">刷新</string>
+    <string name="edit_title">编辑标题</string>
+    <string name="menu_export">导出</string>
+    <string name="exporting">正在导出，请稍后</string>
+    <string name="export_content">内容：</string>
+    <string name="export_time">时间：</string>
+    <string name="export_title">标题：</string>
+    <string name="export_no_content">无</string>
+    <string name="sdcard_is_not_exist">Sdcard卡不存在</string>
+    <string name="can_not_make_file">不能创建文件</string>
+    <string name="export_error">导出过程有误</string>
+    <string name="export_sucess_log">共有%1$s条记录，导出到路径%2$s中</string>
+    <string name="set_date_and_time">Set time</string>
+    <string name="vibrate">need vibrate?</string>
+    <string name="delete_label">"Delete"</string>
+    <string name="search_item_not_exist">The search item is deleted.</string>
+    <string name="Cancel">取消</string>
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+
+    <!-- PayActivity -->
+    <string name="app_tip">提示</string>
+    <string name="pay_by_wx">通过微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="input_reqkey">输入reqkey</string>
+    <string name="input_package_value">输入package value</string>
+    <string name="input_sign">输入sign</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+    <string name="launch_from_wx">Launch From Weixin</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="show_from_wx_tip">这个界面用于显示微信向第三方app请求显示的信息</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="read_from_sdcard">从SD卡识别</string>
+    <string name="rec_from_camera">从摄相头识别</string>
+    <string name="rec_success">识别成功</string>
+    <string name="rec_result_title">识别結果</string>
+    <string name="rec_failure">请重新拍摄清晰的名片</string>
+    <string name="rec_in_progress">正在识别</string>
+    <string name="interrupt_rec_confirm">正在进行识别，是否立即中止?</string>
+    <string name="sdcard_not_ready">SD卡未准备好</string>
+    <string name="waiting">等待</string>
+    <string name="ok">好</string>
+    <string name="back">返回</string>
+    <string name="error">出错</string>
+    <string name="success">成功</string>
+    <string name="warning">警告</string>
+    <string name="attention">注意</string>
+
+    <!-- string value for NameCardImageGallery begin -->
+    <string name="rec_selected_namecard">识别</string>
+    <string name="no_image_in_sdcard">没有找到名片图片</string>
+    <string name="sdcard_no_write_perm">SD卡现在不可写，图片将不保存</string>
+    <!-- string value for NameCardImageGallery end -->
+
+
+    <!-- contact info begin -->
+    <string name="contact_group">组</string>
+    <string name="contact_label_name">姓名</string>
+    <string name="contact_label_phone">电话</string>
+    <string name="contact_label_email">邮箱</string>
+    <string name="contact_label_address">地址</string>
+    <string name="contact_label_org">工作单位/职务</string>
+    <string name="contact_label_url">Url</string>
+    <string name="contact_label_note">备注</string>
+    <string name="type_home">家庭</string>
+    <string name="type_work">工作</string>
+    <string name="type_other">其它</string>
+    <string name="type_pager">呼叫机</string>
+    <string name="type_mobile">移动电话</string>
+    <string name="type_fax_home">家庭传真</string>
+    <string name="type_fax_work">工作传真</string>
+    <string name="save_contact">保存</string>
+    <string name="discard">放弃</string>
+    <string name="contact_default_note">由远大名片识别程序添加</string>
+    <string name="contact_saved">联系人已保存</string>
+    <string name="discard_contact_confirm">联系人信息未保存，真的要放弃吗?</string>
+    <string name="saving_contact_progress">正在保存联系人...</string>
+    <string name="contact_not_saved_warning">联系人信息未保存, 是否现在保存?</string>
+    <string name="stopping_rec">正在停止识别...</string>
+    <!-- contact info end -->
+
+    <string name="pref_title">设置</string>
+    <string name="pref_settings">设置</string>
+    <string name="pref_auto_focus">自动对焦</string>
+    <string name="pref_auto_rec">自动识别</string>
+    <string name="pref_auto_detect">自动检测边界</string>
+    <string name="pref_save_rec_image">保存名片图片</string>
+    <string name="pref_select_rec_prog_style">识别等待效果</string>
+
+    <string-array name="rec_progress_style_titles">
+        <item>正常</item>
+        <item>扫描效果</item>
+    </string-array>
+    <string-array name="rec_progress_style_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="pull_to_up">上拉刷新</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="no_more_data">更多数据</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="release_to_refresh">松开刷新</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="time_error">时间有问题</string>
+
+    <integer-array name="config_newImMessageVibePattern">
+        <item>300</item>
+        <item>200</item>
+        <item>300</item>
+        <item>200</item>
+    </integer-array>
+    <!-- 互动社区 -->
+    <!-- voip -->
+    <string name="voip_btn_accept_text">接受</string>
+    <string name="voip_btn_reject_text">拒绝</string>
+
+    <!-- 增加Voip点对点、直拨错误码： -->
+    <string name="voip_call_fail_connection_failed_auth">第三方鉴权地址连接失败</string>
+    <string name="voip_call_fail_no_pay_account">第三方主账号余额不足</string>
+    <string name="main_title">Five Chess</string>
+    <string name="btn_newgame">New</string>
+    <string name="text_victor">Congratulations!You win!</string>
+    <string name="text_lose">Keep up the good work。</string>
+    <string name="share_sdk">Share SDK</string>
+    <string name="login_with_wechat">用微信登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="title_victor">对弈，胜利！</string>
+    <string name="title_lose">挑战失败</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出</string>
+    <string name="auth_complete">授权成功</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+
+    <!-- 会员简介 -->
+    <string name="vip_show_top_center">〔注册会员〕简介</string>
+    <string name="vip_show_message">我要申请〔注册会员〕</string>
+    <string name="vip_show_text0">这是一个人人都免费的超级社区平台</string>
+    <string name="vip_show_text1">中国已进入4G时代，消费者不仅仅只是打电话免费</string>
+    <string name="vip_show_text2">〔打电话免费〕只需每日签到，轻松得话费，就可永远免费打电话。</string>
+    <string name="vip_show_text3">〔谈恋爱免费〕谁说谈恋爱一定要花钱，远大恋爱平台永远都免费。</string>
+    <string name="vip_show_text4">〔找资源免费〕资源真实可靠，需要什么找什么，而且永远都免费。</string>
+    <string name="vip_show_text5">〔拓人脉免费〕朋友圈、伙伴圈、创业圈、商务圈，永远对您免费。</string>
+    <string name="vip_show_text6">〔消费领红包〕到全国商家消费，领取红包种子，享现金红包特权。</string>
+    <string name="vip_show_text7">〔建数据免费〕只要是会员就可永远拥有建立自己大数据的大平台。</string>
+    <string name="vip_show_text8">〔做事业免费〕只需一部手机就可通过移动互联网开创自己的事业。</string>
+    <string name="vip_show_text9">〔学赚钱免费〕培训不花钱，课堂天天有，人人都赚钱，永远免费。</string>
+    <string name="vip_show_text10">〔找帮忙免费〕社区天天有人在等你，一个好汉三个帮，绝对免费。</string>
+
+    <!-- 见习创客 -->
+    <string name="jianxichuangke1">\t\t〔见习创客〕是远大云商根据移动互联网短平快的特点，结合广大创业者对低成本创业的需求而推出的低门槛创业角色，从而进一步推进创业进程，推动全民创业的热情。</string>
+    <string name="jianxichuangke2">\t\t〔见习创客〕的主要任务即为通过辅导他人成为见习创客，获得创业受益，从而迅速积累创业经验，为自己成长为独当一面的高级创业者做准备。</string>
+    <string name="jianxichuangke3">\t\t〔见习创客〕还可以通过分享会员建立自己的会员大数据，享受注册会员在远大商城购买商品利润50%的分账。〔见习创客〕虽是远大云商初级创业角色，但也是远大云商最具活力与激情的创业角色之一，是广大创业初学者学习成长、经验沉淀的最佳选择。</string>
+    <string name="iwantrequestjxck">我要申请〔见习创客〕</string>
+    <!-- 移动创客介绍 -->
+    <string name="move_top_center">〔移动创客〕简介</string>
+    <string name="move_introduce1">\t\t〔移动创客〕是远大云商针对创业者进行广泛调研后，根据不同创业群体需求，进一步细分出的集多收益、低成本、高灵活度等特点的创业角色。该角色为拥有海量实体店铺资源和相关拓展能力的创业者量身定做，其主要业务定位为向线下实体商家赠送〔远大商圈〕系统，协助商家发展，以最大限度发挥创业者的资源优势，增加创业者的收益。</string>
+    <string name="move_image_text1">分享\n会员</string>
+    <string name="move_image_text2">分享\n商品</string>
+    <string name="move_image_text3">分享\n商家</string>
+    <string name="move_image_text4">充值\n收益</string>
+    <string name="move_message">我要申请〔移动创客〕</string>
+    <string name="move_btn">点此立即申请</string>
+
+    <!-- 城市经理简介 -->
+    <string name="business_create_topcenter">〔城市经理〕简介</string>
+    <string name="cykj_0">\t\t〔城市经理〕是远大云商基于移动互联网大背景下，深入研究移动互联网大浪潮下对传统创业模式形成的重大冲击而精心设计的创业角色。创业者一旦成为远大云商的城市经理，就拥有了一个永远锁定实体店铺的O2O超级移动大系统，一个永远锁定终端消费的云端数据超级大系统，一个让系统数据永远为自己获取财富的超级大系统。</string>
+    <string name="cykj_1">\t\t<b>O2O移动超级大系统：</b>创业者成为〔城市经理〕后，不但可以快速锁定线上消费者，还可以通过向线下实体商家免费赠送“全国商圈客户管理大系统”来锁定千万实体商户，让自己成为全国商家的股东，真正实现O2O平台互联互通。</string>
+    <string name="cykj_2">\t\t<b>锁定数据超级大系统：</b>不论创业者是通过自己分享会员产生的系统数据，还是通过拓展线下商家锁定的数据，都永远属于自己的系统大数据，这些数据不论做什么（消费还是创业），都可为创业者带来丰厚的系统收益，而且终身享受。</string>
+    <string name="cykj_3">\t\t<b>倍增财富超级系统：</b>创业者依靠一部手机，既可通过自己分享锁定会员，又可通过拓展的商家锁定数据。不论这些会员去商家消费，还是去平台购物，个人创业等，都将让自己获取永远的收益，一年进账10万元，而且一年更比一年高。</string>
+    <string name="business_create_message">我要申请〔城市经理〕</string>
+    <string name="business_create_apply">点此立即申请</string>
+
+    <!-- 远大社区简介 -->
+    <string name="business_community">\t〔远大社区〕是远大云商为远大创业者及会员提供的一个多功能创业型真人社交平台（所有创业者身份都是真实的）。会员不但可以通过〔远大社区〕与好友进行文字或实时语音交流，还可与附近的人进行随机语音通话,寻找附近的创业帮助，体验不一样的邂逅，不一样的借力……同时,社区还增加了话题讨论、购物、游戏、名片通等多种时尚有趣的新功能，是聊天、创业、找资源、寻帮助的综合性社交平台大系统。</string>
+    <!-- 购物卡简介 -->
+
+    <string name="vip_show_register">马上申请</string>
+    <string name="business_shop_card_introduce">\t\t购物卡（英文名称为Shopping Card）是一种集餐饮、服务、购物于一体的消费卡，最早出现于一些大型商场、超市（如大润发、时代超市、苏果、农工商金鹰、沃尔玛、八佰伴、家乐福等大型超市都有购物卡销售），后来又广泛流行于餐饮、娱乐、美容健身、宾馆酒店行业等（包括各种充值卡储值卡、购物券等）。由于购物卡具有消费返现、消费券累计、身份象征等多种增值及个性功能，因此互联网行业也广泛通过“电子账户”的形式展现出购物卡（充值卡）的众多优势（即“网上购物卡”）。</string>
+    <string name="business_shop_card_introduce2">\t\t“远大云商购物卡”是由远大创业向社会隆重推出的集“购物消费”、“充值返现”、“赠送消费券”于一体的消费电子购物卡。远大云商“购物卡”具有电子账户管理、消费明细查询、无使用时间限制、账户终身有效、可转让、可继承、电脑手机均可使用等一些列突出特点，是员工福利、节日礼品、商务馈赠、个人创业的最佳选择！</string>
+    <string name="td1"><b>特点一</b>：购物卡最低1000元起，最高10万元。</string>
+    <string name="td2"><b>特点二</b>：购物卡本金可购买〔远大云商〕平台具有“购物卡标识”的所有商品。</string>
+    <string name="td3"><b>特点三</b>：每月赠送1.5%的电子消费券（连续五年），所赠电子消费券可购买〔远大云商〕平台所有商品和服务（亦可兑换现金）。</string>
+    <string name="td4"><b>特点四</b>：每月赠送0.5%的消费消费券（连续五年），所赠消费券可换购〔远大云商〕平台所有商品和服务。</string>
+    <string name="td5"><b>特点五</b>：首次购卡金额超过10万元时，即赠送个人创业大系统（城市经理）。</string>
+
+    <!-- 远大电话简介 -->
+    <string name="business_far_tel_topcenter">远大电话简介</string>
+    <!-- 〔远大商圈〕简介 -->
+    <string name="union_staff"><b>职员管理 ：</b>对员工实行福分制管理，不需多花一分钱，员工从此变股东，让优秀员工永远跟随你。</string>
+    <string name="union_mess_texting"><b>消息推送 ：</b>商家活动、促销信息，数据定位直达精准会员，想发给谁就发给谁，还可一键到社区。</string>
+    <string name="union_goods_publish"><b>商品发布 ：</b>特色商品、特色服务，手机随时拍照，配上简单文字，瞬时发布，所有客户立马知晓。</string>
+    <string name="move_introduce2">\t\t〔移动创客〕除了可以通过分享会员、分享商品、分享商家建立自己的会员大数据外，最重要的事业和收入来源为拓展线下实体商家获得的充值收益。通过向实体商家赠送〔远大商圈〕系统，建立自己的实体商业大数据，从而使实体商家的发展与自己的收益息息相关，间接成为实体商家的股东，实现与商家共同发展。</string>
+    <string name="union_client" formatted="false"><b>客户管理：</b>给消费者赠送红包种子，绑定新会员，锁定老会员，从此将消费者变成自己的大数据。</string>
+
+    <!--  -->
+
+    <string name="shock_rule"><u>查看转账规则</u></string>
+    <string name="search_title">展讯便签</string>
+    <string name="alarm_time_error">记事提醒开始时间不能小于系统当前时间!</string>
+    <string name="title_len_is_zero">标题为空</string>
+    <string name="input_content">请先输入内容，再设置记事提醒 !</string>
+    <string name="title_activity_change">ChangeActivity</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="title_activity_red_package">RedPackageActivity</string>
+    <string name="title_activity_red_wall">RedWallActivity</string>
+    <string name="title_activity_zhezhao">ZhezhaoActivity</string>
+    <string name="title_activity_signal_day_zhongzi">SignalDayZhongzi</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_shop_office_frame2">ShopOfficeFrame2</string>
+    <string name="title_activity_afrangment">AFrangment</string>
+    <string name="title_activity_greater_china_plany_introduction">GreaterChinaPlanyIntroduction</string>
+    <string name="title_activity_shipping_address">ShippingAddressActivity</string>
+    <string name="title_activity_joke">JokeActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+
+    <string name="about_us"><Data><![CDATA[<br/>&emsp &emsp [远大云商]是由深圳远大创业投资发展有限公司基于4G时代背景、紧跟“互联网+”大浪潮而投巨资打造的移动互联网大众创业服务平台，平台为创业者提供手机创业系统，从而实现“以创业带动就业，让天下无人失业”的企业使命，同时为实体经营者提供商圈系统，帮助千万实体商家锁定全国客户，绑定优秀员工。<br/>&emsp &emsp 会员安装【远大云商】APP，不仅可以享受注册领红包、分享注册领红包、实用日常查询等，还可以轻松实现智能化寻找需要消费的商家，赚取“红包种子”享受红包特权，还可以换购商品！【远大云商】让您的生活更便捷，更实惠！]]></Data></string>
+    <string name="registration_introduce"><Data><![CDATA[<br/>&emsp &emsp 一、任何自然人均可以通过〔远大云商〕手机APP或网站，只需30秒即免费注册会员，完善基本资料，成功注册会员，赠送50元购物消费券，并领取现金红包一个。
+<br/>&emsp &emsp 二、分享会员注册，同样赠送50元消费券，并领取现金红包一个。
+<br/>&emsp &emsp 三、去商家消费，享受等额红包种子赠送。
+<br/>&emsp &emsp 四、去商城购物，享受等额红包种子赠送（包括用消费券购物）。
+<br/>&emsp &emsp 五、会员分享他人注册会员时，终身享有该会员消费额1%的现金奖励（大数据）。
+
+]]></Data></string>
+
+    <string name="sharetitle">【远大云商】邀你天天领红包！
+</string>
+
+    <string name="sharemessage">注册领红包，分享领红包，去商家消费领红包，到商城购物领红包。大数据系统让你年年收入超百万…
+
+</string>
+</resources>

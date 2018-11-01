@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:gravity="fill"
+    android:isScrollContainer="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/proxySiteTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            layout="@layout/top" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proxySiteTop"
+        android:fadingEdge="none"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/liner_border_white"
+                android:shrinkColumns="0"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="10dp"
+                        android:text="辅导老师："
+                        android:textColor="#ff535353"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/vip_zsdw"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/liner_border_white"
+                        android:hint="请输入您的辅导老师"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="#535353"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/request_site_name_line"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:drawablePadding="10.0dip"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:text="辅导老师："
+                        android:textColor="#c6c6c6"
+                        android:textSize="16.0sp"
+                        android:visibility="gone" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:text="支付方式："
+                android:textColor="#ff535353"
+                android:textSize="16.0sp" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                layout="@layout/pay_money_type_style2" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/liner_border_white"
+                android:shrinkColumns="0"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/liner2_bottom_border"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:id="@+id/site_yucunMoney"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="10dp"
+                        android:text="创业服务费："
+                        android:textColor="#ff535353"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/vip_wangMoney"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:gravity="left"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="￥1980"
+                        android:textColor="#cf0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="10dp"
+                        android:text="空间类型："
+                        android:textColor="#ff535353"
+                        android:textSize="16.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/siteType1"
+                            android:layout_width="0.0dip"
+                            android:layout_height="30dp"
+                            android:layout_weight="1.3"
+                            android:background="@drawable/sel_lan"
+                            android:gravity="center_horizontal"
+                            android:padding="5.0dip"
+                            android:tag="7800 "
+                            android:textColor="#ffffffff" />
+
+                        <ImageButton
+                            android:id="@+id/siteType2"
+                            android:layout_width="0.0dip"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1.3"
+                            android:background="@drawable/no_sel_hong"
+                            android:gravity="center_horizontal"
+                            android:padding="5.0dip"
+                            android:tag="10800 "
+                            android:text="红钻店"
+                            android:textColor="#ffffffff" />
+
+                        <ImageButton
+                            android:id="@+id/siteType3"
+                            android:layout_width="0.0dip"
+                            android:layout_height="30dp"
+                            android:layout_weight="1.3"
+                            android:background="@drawable/no_sel_jin"
+                            android:gravity="center_horizontal"
+                            android:padding="5.0dip"
+                            android:tag="13800 "
+                            android:text="金钻店"
+                            android:textColor="#ffffffff" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/liner_border_white"
+                android:shrinkColumns="0"
+                android:stretchColumns="0" >
+
+                <TableRow
+                    android:id="@+id/request_site_two"
+                    android:layout_width="fill_parent"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="10dp"
+                        android:text="交易密码："
+                        android:textColor="#535353"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/vip_twoPwd"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/liner_border_white"
+                        android:hint="请输入您的交易密码"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="#535353"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/cb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/community_cb_check_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="我已阅读并同意《城市经理合同》"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/vip_submit"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/button_submit_background"
+                    android:padding="5dp"
+                    android:text="确认"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/vip_clear"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/button_reset_background"
+                    android:padding="5dp"
+                    android:text="清空"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

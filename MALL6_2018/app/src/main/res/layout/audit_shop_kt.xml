@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:id="@id/ttt_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="开通账户：" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@id/main_tab_group"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@id/audit_chongzhi"
+                    android:layout_gravity="left"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:text="充值账户"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@id/audit_quanyi"
+                    android:layout_gravity="left"
+                    android:layout_weight="1.0"
+                    android:text="权益账户"
+                    android:textColor="@color/black" />
+                <RadioButton
+                    android:id="@+id/audit_zhichanbao"
+                    android:layout_gravity="left"
+                    android:layout_weight="1.0"
+                    android:text="创业包"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ttt_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttt_1"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="交易密码：" />
+
+        <EditText
+            android:id="@id/audit_shop_tpwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/ttt_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ttt_2"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="开通备注：" />
+
+        <EditText
+            android:id="@id/audit_shop_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="140.0dip"
+            android:singleLine="false" />
+    </LinearLayout>
+
+</RelativeLayout>

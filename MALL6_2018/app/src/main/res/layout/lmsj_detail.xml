@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/id1"
+        layout="@layout/title_blue" />
+
+    <com.mall.serving.community.view.floatup.ObservableScrollView
+        android:id="@id/lmsj_detail_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/id1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Gallery
+                android:id="@id/lmsj_detail_viewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <TextView
+                android:id="@id/lmsj_detail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffffff"
+                android:padding="10.0dip"
+                android:text=""
+                android:textColor="#ff535353"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@id/lmsj_detail_juli2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffffff"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:textColor="#ff9c9c9c"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffc6c6c6" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@id/lmsj_detail_dianhua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lmsj_bddh"
+                        android:drawablePadding="5.0dip"
+                        android:gravity="right"
+                        android:padding="10.0dip"
+                        android:text="商家电话"
+                        android:textColor="#ff535353" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_marginLeft="1.0dip"
+                        android:layout_marginRight="1.0dip"
+                        android:background="#efefefef" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_kefu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lmsj_bddh"
+                        android:drawablePadding="5.0dip"
+                        android:gravity="right"
+                        android:padding="10.0dip"
+                        android:text="远大客服"
+                        android:textColor="#ff535353" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="#efefefef" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/lmsj_detail_gotothat"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left|center"
+                        android:layout_weight="1.0"
+                        android:drawableLeft="@drawable/gotothat"
+                        android:drawablePadding="3.0dip"
+                        android:gravity="left|center"
+                        android:padding="5.0dip"
+                        android:text="就去这"
+                        android:textColor="#ff535353"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_mysc"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:drawableLeft="@drawable/mysc"
+                        android:drawablePadding="3.0dip"
+                        android:gravity="center_vertical"
+                        android:padding="5.0dip"
+                        android:text="收藏它"
+                        android:textColor="#ff535353"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_fujinde"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right|center"
+                        android:layout_weight="1.0"
+                        android:drawableLeft="@drawable/iamthat"
+                        android:drawablePadding="3.0dip"
+                        android:gravity="left|center"
+                        android:padding="5.0dip"
+                        android:text="附近的商家"
+                        android:textColor="#ff535353"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffc6c6c6" />
+
+                <TextView
+                    android:id="@id/lmsj_detail_cate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:padding="5.0dip"
+                    android:text="类别： "
+                    android:textColor="#ff535353" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="#efefefef" />
+
+                <TextView
+                    android:id="@id/lmsj_detail_zone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5.0dip"
+                    android:text="城市："
+                    android:textColor="#ff535353" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="#efefefef" />
+
+                <TextView
+                    android:id="@id/lmsj_detail_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5.0dip"
+                    android:text="地址："
+                    android:textColor="#ff535353" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="#efefefef" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@id/lmsj_detail_weixin"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/lmsj_detail_weixin"
+                        android:drawablePadding="5.0dip"
+                        android:padding="5.0dip"
+                        android:text=""
+                        android:textColor="#ff535353" />
+
+                    <RadioButton
+                        android:id="@id/lmsj_detail_qq"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/lmsj_detail_qq"
+                        android:drawablePadding="5.0dip"
+                        android:padding="5.0dip"
+                        android:text=""
+                        android:textColor="#ff535353" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="1.0dip"
+                    android:layout_marginRight="1.0dip"
+                    android:background="#efefefef" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/liner_border_white"
+                android:orientation="vertical"
+                android:padding="10.0dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/jt"
+                    android:text="商家政策"
+                    android:textColor="#ff535353"
+                    android:textSize="20.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/list_item_split" />
+
+                <TextView
+                    android:id="@id/lmsj_detail_businessPolicy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff535353" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/lmsj_detail_product"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/liner_border_white"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:drawableRight="@drawable/jt"
+                    android:gravity="center_vertical"
+                    android:text="特色产品"
+                    android:textColor="#9c9c9c" />
+
+                <TextView
+                    android:id="@+id/lmsj_product_no_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="商家还没上传商品哦，给他打电话提示一下吧！"
+                    android:textColor="#c6c6c6"
+                    android:textSize="15.0sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="@drawable/list_item_split" />
+
+                <Gallery
+                    android:id="@id/lmsj_detail_product_images"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130.0dip"
+                    android:spacing="10.0dip"
+                    android:visibility="gone" />
+
+                <com.mall.yyrg.adapter.MyListView
+                    android:id="@+id/goods_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#f0f0f0"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xianshigengduo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/liner_border_white"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="显示更多"
+                android:textColor="@color/yyrg_shouye_zi"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/liner_border_white"
+                android:orientation="horizontal"
+                android:padding="10.0dip">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:padding="10.0dip">
+
+                    <TextView
+                        android:id="@+id/lmsj_detail_hb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:drawableLeft="@drawable/buzhichi"
+                        android:drawablePadding="5.0dip"
+                        android:tag="hb"
+                        android:text="赠送红包种子"
+                        android:textColor="#ff535353" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_zssb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:drawableLeft="@drawable/buzhichi"
+                        android:drawablePadding="5.0dip"
+                        android:tag="sb"
+                        android:text="支持赠送商币"
+                        android:textColor="#ff535353"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_zsjf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:drawableLeft="@drawable/buzhichi"
+                        android:drawablePadding="5.0dip"
+                        android:tag="jf"
+                        android:text="支持赠送消费券"
+                        android:textColor="#ff535353"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/fenge_shu" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:padding="10.0dip">
+
+                    <TextView
+                        android:id="@+id/lmsj_detail_hbhg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:drawableLeft="@drawable/buzhichi"
+                        android:drawablePadding="5.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:tag="hbhg"
+                        android:text="支持换购"
+                        android:textColor="#ff535353" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_sbdh"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:drawableLeft="@drawable/buzhichi"
+                        android:drawablePadding="5.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:tag="sbdh"
+                        android:text="支持商币兑换"
+                        android:textColor="#ff535353"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@id/lmsj_detail_jfhg"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:drawableLeft="@drawable/buzhichi"
+                        android:drawablePadding="5.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:tag="jfhg"
+                        android:text="支持消费券换购"
+                        android:textColor="#ff535353"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/liner_border_white"
+                android:orientation="vertical"
+                android:padding="10.0dip">
+
+                <LinearLayout
+                    android:id="@id/lmsj_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/comment_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="会员评价"
+                        android:textColor="#9c9c9c" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/jt"
+                        android:gravity="center_vertical"
+                        android:text="更多"
+                        android:textColor="#9c9c9c" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/lmsj_detail_comment_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10.0dip" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/liner_border_white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RatingBar
+                    android:id="@+id/totalscorrb"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/food_rating_bar_full"
+                    android:rating="0.0"
+                    android:stepSize="0.1" />
+
+                <TextView
+                    android:id="@+id/totalscortv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/totalscorrb"
+                    android:text=""
+                    android:textColor="#F2A83E" />
+
+                <TextView
+                    android:id="@+id/tocommentariestv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/jt"
+                    android:gravity="center_vertical"
+                    android:text="去评价"
+                    android:textColor="#9c9c9c" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/liner_border_white"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:button="@null"
+                    android:drawablePadding="5.0dip"
+                    android:padding="10.0dip"
+                    android:text="商铺简介"
+                    android:textColor="#9c9c9c" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_margin="1.0dip"
+                    android:background="#ffefefef" />
+
+                <TextView
+                    android:id="@id/lmsj_detail_newcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_margin="10.0dip"
+                    android:lineSpacingExtra="3.0dip"
+                    android:padding="10.0dip"
+                    android:textColor="#ff535353" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.mall.serving.community.view.floatup.ObservableScrollView>
+
+    <LinearLayout
+        android:id="@id/lmsj_comment_comment_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffefefef"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5.0dip">
+
+            <EditText
+                android:id="@id/lmsj_comment_comment_value"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="请输入您的评论"
+                android:inputType="text"
+                android:maxLines="3"
+                android:textColor="#ff535353" />
+
+            <Button
+                android:id="@id/lmsj_comment_comment_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/liner2_border_white"
+                android:gravity="center_vertical"
+                android:padding="10.0dip"
+                android:text="发表" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@id/lmsj_comment_user_rating"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center_horizontal"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:progressDrawable="@drawable/food_rating_bar_big_full"
+            android:rating="5.0"
+            android:stepSize="1"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

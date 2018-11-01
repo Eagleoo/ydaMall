@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:gravity="center" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content"
+    >
+    
+    <Button
+        android:id="@+id/btn_save_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/card_bk1"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/save_contact"
+        android:textColor="@color/bg"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_discard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/card_bk2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/discard"
+        android:textColor="@color/bg"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_chongpai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_bk3"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="重新扫描"
+        android:textColor="@color/bg"
+        android:textSize="18sp" />
+</LinearLayout>
+
+</LinearLayout>

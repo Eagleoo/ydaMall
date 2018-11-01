@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mall.view.BusinessCircle.SwithAreaActivity">
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maincolor">
+
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/community_topback_selector"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="切换商圈"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/quanguo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="全国商圈"
+            android:textColor="@color/bg"
+            android:textSize="16sp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8"
+        >
+        <com.mall.view.MoreTextView
+            android:id="@+id/hotcitytitile_mt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门商圈"
+           android:layout_centerHorizontal="true"
+            app:drawable_src="@drawable/circle_hot"
+            android:gravity="center"
+            android:textSize="14sp"
+            app:imageHight="@dimen/space_14"
+            app:imageWidth="@dimen/space_14"
+            android:paddingBottom="@dimen/space_2"
+            android:drawablePadding="@dimen/space_8"
+                      />
+
+        <ListView
+            android:id="@+id/hotcitylist_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotcitytitile_mt"
+            >
+
+        </ListView>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8"
+        >
+
+        <RelativeLayout
+            android:id="@+id/swithcitytitile_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.mall.view.MoreTextView
+                android:id="@+id/swithcitytitile_mt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四川省"
+                android:layout_centerInParent="true"
+                app:drawable_src="@drawable/circle_province"
+                android:gravity="center"
+                android:textSize="14sp"
+                app:imageHight="@dimen/space_14"
+                app:imageWidth="@dimen/space_14"
+                android:paddingBottom="@dimen/space_2"
+                android:drawablePadding="@dimen/space_8"
+                />
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/switch_province"
+                android:layout_toRightOf="@+id/swithcitytitile_mt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换省份"
+                android:textSize="10sp"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_centerVertical="true"
+                app:drawable_src="@drawable/circle_selectprovince"
+                app:imageLocation="right"
+                android:gravity="center"
+                android:drawablePadding="@dimen/space_7"
+                app:imageWidth="@dimen/space_8"
+                app:imageHight="@dimen/space_8"
+                />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/swithcitylist_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swithcitytitile_rl"
+            >
+
+        </ListView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

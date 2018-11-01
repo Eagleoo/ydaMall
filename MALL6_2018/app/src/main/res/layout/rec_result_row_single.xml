@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/item_type"
+        android:layout_width="wrap_content"
+        android:background="@drawable/card_bk1"
+        android:layout_height="wrap_content"
+        android:text="111"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="8dp"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@color/bg"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/btn_remove_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/minus" />
+
+    <EditText
+        android:id="@+id/item_value"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btn_remove_item"
+        android:layout_toRightOf="@id/item_type" />
+
+</RelativeLayout>

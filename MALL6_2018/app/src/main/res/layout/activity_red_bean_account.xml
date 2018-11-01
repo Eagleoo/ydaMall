@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5F6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:background="#FF2145">
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/community_topback_selector"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/handertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="红包豆账户"
+            android:textColor="@color/bg"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="#FF2145"
+        android:padding="@dimen/space_8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_15" />
+
+            <com.mall.widget.NumberTextView
+                android:id="@+id/rednumber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="0.00"
+                android:textColor="#ffffff"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:id="@+id/expiredlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/carquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/toshop"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/expiredtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="3dp"
+                    android:text="有x消费券将在2018.1.31号过期"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/torecharge_ll1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="充值"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/czfq"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#CDCDCD" />
+
+        <RelativeLayout
+            android:id="@+id/topackup_ll1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="封入红包盒"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/frhbh"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#CDCDCD" />
+
+        <RelativeLayout
+            android:id="@+id/tovouchers_ll1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="转入消费券"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/frxfq"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/torecharge_ll2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="提现"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/czfq"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/torecharge_ll22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="转账"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/frhbh"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/mtv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="转账"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/frhbh"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_9">
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="充值币转红包豆"
+                android:textSize="13sp"
+                app:drawable_src="@drawable/frhbh"
+                app:imageHight="15dp"
+                app:imageWidth="15dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/space_9"
+            android:text="明细列表"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_15" />
+
+        <TextView
+            android:id="@+id/tomingxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_9"
+            android:text="更多>"
+            android:textColor="#B2B2B2"
+            android:textSize="@dimen/text_size_13" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/redbeanaccount_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

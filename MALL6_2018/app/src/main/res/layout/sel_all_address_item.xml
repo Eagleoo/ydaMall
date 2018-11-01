@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/liner2_bottom_border"
+    android:orientation="horizontal" 
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/sel_item_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/pay_item_no_checked"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text=" 张学友 - 13685412540 - 四川省 成都市 沐川县 - 深南大道166号13楼"
+        android:textColor="#535353" />
+    
+    <ImageView 
+        android:id="@+id/bianjiiv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/addressbianji"
+
+        android:layout_gravity="center_vertical"
+        />
+
+</LinearLayout>

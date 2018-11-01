@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_layout4_shopM_item_line"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@id/main_layout4_shopM_item_logo"
+        android:layout_width="100.0dip"
+        android:layout_height="90.0dip"
+        android:layout_margin="5.0dip"
+        android:src="@drawable/zw174" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/main_layout4_shopM_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="我是联盟商家的名字"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@id/main_layout4_shopM_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text=""
+            android:textColor="#ff535353" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/main_layout4_shopM_item_cate"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="美容美发"
+                android:textColor="#ffde9732" />
+
+            <TextView
+                android:id="@id/main_layout4_shopM_item_juli"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="65535公里"
+                android:textColor="#ff535353" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@id/main_layout4_shopM_item_goto"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/gotothat"
+                android:drawablePadding="3.0dip"
+                android:text="就去这"
+                android:textColor="#ff535353" />
+
+            <TextView
+                android:id="@id/main_layout4_shopM_item_mysc"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/mysc"
+                android:drawablePadding="3.0dip"
+                android:text="收藏它"
+                android:textColor="#ff535353" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

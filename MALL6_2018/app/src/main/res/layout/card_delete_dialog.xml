@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update_dialig_yuanjiao"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/update_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#404040"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="left"
+        android:text="提示" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAEAEA"
+        ></LinearLayout>
+
+    <TextView
+        android:id="@+id/update_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="10dp"
+        android:text="确定要删除该分组？"
+        android:textColor="#404040"
+        android:textSize="15sp" />
+
+ <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#EAEAEA"
+        ></LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+      >
+     <TextView 
+         android:id="@+id/yihou_update"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textColor="#D6D6D6"
+         android:text="取消"
+         android:padding="10dp"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:background="@drawable/new_page_dianji"
+         />
+     <LinearLayout 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="#EAEAEA"
+        ></LinearLayout>
+       <TextView 
+           android:id="@+id/now_update"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textColor="#404040"
+         android:gravity="center"
+         android:padding="10dp"
+         android:text="确定"
+         android:textSize="16sp"
+         android:background="@drawable/new_page_dianji"
+         />
+ </LinearLayout>
+
+</LinearLayout>

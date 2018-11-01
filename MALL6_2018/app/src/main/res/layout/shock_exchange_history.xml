@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_headertop" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/order_biankuang"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/fi1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/sanyuenei"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/order_biankuang1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sb_exchange_history"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/bg"
+                    android:gravity="center|center_vertical"
+                    android:text="商币转账记录"
+                    android:textColor="@color/new_headertop" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/bg" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fi2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/sanyueqian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/order_biankuang1"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/czzh_exchange_history"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|center_vertical"
+                    android:text="充值账户转账记录"
+                    android:textColor="@color/bg" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="#f0f0f0"
+            android:dividerHeight="1dp" >
+        </ListView>
+        <TextView 
+            android:visibility="gone"
+            android:drawableTop="@drawable/community_dynamic_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_gray"
+            android:text="暂无转账记录，返回转账"
+            android:id="@+id/tips"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

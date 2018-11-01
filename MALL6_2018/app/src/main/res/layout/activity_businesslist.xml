@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <me.dkzwm.widget.srl.MaterialSmoothRefreshLayout
+        android:id="@+id/smoothRefreshLayout_with_recyclerView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/businesslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </me.dkzwm.widget.srl.MaterialSmoothRefreshLayout>
+
+    <ImageView
+        android:id="@+id/backtop_iv"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.5"
+        android:src="@drawable/scroller"
+        android:visibility="gone"
+        />
+</RelativeLayout>

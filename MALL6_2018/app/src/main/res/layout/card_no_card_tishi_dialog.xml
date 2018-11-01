@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bk7"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+       <TextView
+           android:id="@+id/counts"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:layout_gravity="center_horizontal"
+           android:layout_margin="10dp"
+           android:gravity="center"
+           android:text="您还没有设置自己的名片\n是否前去扫描或添加？"
+           android:textColor="@color/card_shenhei"
+           android:textSize="16sp" />
+
+       <ImageView
+           android:id="@+id/delete"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:padding="3dp"
+           android:src="@drawable/ssdk_country_clear_search" />
+   </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/quanqu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="前去扫描"
+            android:gravity="center"
+            android:textColor="@color/card_qianhei"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#f0f0f0"
+            >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yihou"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="添加名片"
+            android:textColor="@color/card_qianhei"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@id/lmsj_comment_line_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffefefef"
+            android:orientation="horizontal"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:paddingTop="10.0dip"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:paddingBottom="15.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="15.0dip">
+
+                <TextView
+                    android:id="@id/lmsj_comment_score"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0.0"
+                    android:textColor="#ffff9600"
+                    android:textSize="26.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffcccccc" />
+
+                <TextView
+                    android:id="@id/lmsj_comment_person"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:gravity="center_horizontal"
+                    android:text="0人评价"
+                    android:textColor="#ffb1b3c8"
+                    android:textSize="14.0sp" />
+
+                <RatingBar
+                    android:id="@id/lmsj_comment_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/food_rating_bar_full"
+                    android:rating="0.0"
+                    android:stepSize="0.1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="15.0dip"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.2"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5星"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+
+                    <ProgressBar
+                        android:id="@id/lmsj_comment_5xing"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:progressDrawable="@drawable/lmsj_comment_bar_layer" />
+
+                    <TextView
+                        android:id="@id/lmsj_comment_5xing_ren"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4星"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+
+                    <ProgressBar
+                        android:id="@id/lmsj_comment_4xing"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:progressDrawable="@drawable/lmsj_comment_bar_layer" />
+
+                    <TextView
+                        android:id="@id/lmsj_comment_4xing_ren"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3星"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+
+                    <ProgressBar
+                        android:id="@id/lmsj_comment_3xing"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:progressDrawable="@drawable/lmsj_comment_bar_layer" />
+
+                    <TextView
+                        android:id="@id/lmsj_comment_3xing_ren"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2星"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+
+                    <ProgressBar
+                        android:id="@id/lmsj_comment_2xing"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:progressDrawable="@drawable/lmsj_comment_bar_layer" />
+
+                    <TextView
+                        android:id="@id/lmsj_comment_2xing_ren"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1星"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+
+                    <ProgressBar
+                        android:id="@id/lmsj_comment_1xing"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:progressDrawable="@drawable/lmsj_comment_bar_layer" />
+
+                    <TextView
+                        android:id="@id/lmsj_comment_1xing_ren"
+                        android:layout_width="30.0dip"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ffb1b3c8"
+                        android:textSize="13.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@id/lmsj_comment_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/lmsj_comment_comment_bar"
+            android:layout_below="@id/lmsj_comment_line_1"
+            android:cacheColorHint="#ffffffff"
+            android:divider="#dddddd"
+            android:dividerHeight="1px" />
+
+
+        <LinearLayout
+            android:id="@id/lmsj_comment_comment_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffefefef"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5.0dip">
+
+                <EditText
+                    android:id="@id/lmsj_comment_comment_value"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1.0"
+
+                    android:gravity="center_vertical"
+                    android:hint="请输入您的评论"
+                    android:inputType="text"
+                    android:maxLines="3"
+                    android:textColor="#ff535353" />
+
+                <Button
+                    android:id="@id/lmsj_comment_comment_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/liner2_border_white"
+                    android:gravity="center_vertical"
+                    android:padding="10.0dip"
+                    android:text="发表" />
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@id/lmsj_comment_user_rating"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="false"
+                android:max="5"
+                android:numStars="5"
+                android:progressDrawable="@drawable/food_rating_bar_big_full"
+                android:rating="5.0"
+                android:stepSize="1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

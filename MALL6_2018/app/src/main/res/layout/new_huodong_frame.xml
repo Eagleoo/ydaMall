@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="#f37d90" >
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/topback" />
+
+        <TextView
+            android:id="@+id/hdzq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="活动专区"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+         <TextView
+             android:id="@+id/fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/huodong_fenlei"
+            android:textColor="@color/bg"
+            android:textSize="12sp" />
+         
+    </RelativeLayout>
+    <GridView 
+         android:id="@+id/goods_list"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:numColumns="2"
+         android:horizontalSpacing="5dp"
+         android:verticalSpacing="5dp"
+         android:background="#f0f0f0"
+         ></GridView>
+
+</LinearLayout>

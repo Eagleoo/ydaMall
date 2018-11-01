@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="520px"
+        android:layout_height="wrap_content"
+        android:layout_margin="12px"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <cn.finalteam.rxgalleryfinal.ui.widget.SquareImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="215px"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:id="@+id/moneyline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="28px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="40px"
+                tools:text="奥佳宝奥佳宝奥佳宝佳宝佳宝" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:gravity="center_vertical"
+                android:textColor="#D11830"
+                android:textSize="40px"
+                tools:text="￥12500" />
+
+            <TextView
+                android:id="@+id/style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:text=""
+                android:textColor="#F3431A"
+                android:textSize="20px"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
+

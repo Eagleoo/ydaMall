@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="60dp"
+        android:fillViewport="true"
+        android:isScrollContainer="true" >
+
+        <LinearLayout
+            android:id="@+id/message_board_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollvie"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:fadingEdge="none"
+                android:fillViewport="true"
+                android:isScrollContainer="true"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/message_board_user_publish"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp" >
+
+                        <ImageView
+                            android:id="@+id/message_board_face"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/s25381471_97_97" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/message_board_userId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="zhouyi007"
+                                android:textColor="#535353"
+                                android:textSize="16sp" >
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/message_board_city"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:text=""
+                                    android:textColor="@color/gray_text"
+                                    android:textSize="12sp" >
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/message_board_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left|center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="30分钟前"
+                                    android:textColor="@color/gray_text"
+                                    android:textSize="12sp" >
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/message_board_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/liner_border_f6f6f6_no_fillet"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:singleLine="false"
+                        android:text="\u3000\u3000近期，有关“奶茶妹妹”主演电影《左耳》中“小耳朵”一角的消息传的沸沸扬扬，最近更有消息称“奶茶妹妹”已经以200万片酬接演该片。8月5日晚20:51分，电影《左耳》导演苏有朋发微博否认这一消息，并称：小耳朵另有其人。"
+                        android:textColor="#535353"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:id="@+id/message_board_images2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#D9D9D9" >
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/message_board_images"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ListView
+                    android:id="@+id/message_board_comment_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="#fcfcfc"
+                    android:dividerHeight="5dp"
+                    android:fadingEdge="none" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#f6f6f6" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/message_board_praise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/message_corner_round"
+                    android:drawablePadding="2dp"
+                    android:drawableRight="@drawable/message_board_praise"
+                    android:padding="5dp"
+                    android:text="123"
+                    android:textColor="#535353"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/message_board_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/message_corner_round"
+                    android:drawablePadding="2dp"
+                    android:drawableRight="@drawable/message_board_comment"
+                    android:padding="5dp"
+                    android:text="123333"
+                    android:textColor="#535353"
+                    android:textSize="12sp" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/message_board_priase_user"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/message_board_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/message_board_forward" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#ececec" >
+        </LinearLayout>
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/custom_facerelativelayout" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="fill_parent" >
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/editext_no_border"
+                android:gravity="top|left"
+                android:hint="评论内容"
+                android:paddingLeft="5dp"
+                android:paddingTop="7dp"
+                android:textColorHint="#c6c6c6"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/resturant_button_selector"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/top"
+        android:layout_gravity="top"
+        layout="@layout/top" />
+
+</FrameLayout>

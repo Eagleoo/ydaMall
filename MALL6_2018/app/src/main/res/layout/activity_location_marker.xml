@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mall.view.Map.LocationMarkerActivity">
+
+    <RelativeLayout
+        android:id="@id/lmsj_top_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#49afef"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/topback"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableLeft="@drawable/topback"
+            android:drawablePadding="5.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text=""
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@id/topCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="联盟商家"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@id/topright"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/map_lmsj_cate" />
+
+        <TextView
+            android:id="@id/topright2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/topright"
+            android:layout_weight="0.3"
+            android:drawableLeft="@drawable/lm_iamwhere"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ScrollView
+            android:id="@+id/map_lmsj_cityList_scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/map_lmsj_cityList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

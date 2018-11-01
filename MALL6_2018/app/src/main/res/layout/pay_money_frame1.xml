@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5.0dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/liner_border_white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/goodsprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="合计 :元"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/redtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center_vertical"
+                        android:text="子x个)"
+                        android:textColor="#A3A3A3"
+                        android:textSize="10sp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#40cccccc" />
+
+                <TextView
+                    android:id="@id/shop_pay_pay_money_product_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:text="合计："
+                    android:textColor="#A3A3A3" />
+
+                <!--  <TextView
+                      android:id="@id/pay_userAccount_rebate1"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10.0dip"
+                      android:layout_marginRight="10.0dip"
+                      android:text="购物分账：￥0.00"
+                      android:textColor="#ff535353" />
+
+                  <TextView
+                      android:id="@id/pay_userAccount_money"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10.0dip"
+                      android:text="业务账户余额：0.00"
+                      android:textColor="@color/blue" />-->
+            </LinearLayout>
+
+            <include
+                layout="@layout/pay_money_type_style4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:id="@id/pay_money_frame_two_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/liner_border_white_no_fillet"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="您的交易密码："
+                        android:textColor="#ff535353"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@id/shop_pay_pay_twoPwd"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/liner_border_white_no_fillet"
+                        android:gravity="center_vertical"
+                        android:hint="请输入您的交易密码"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:textColor="#ff535353"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/pay_submit_payMoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FF2146"
+                    android:gravity="center"
+                    android:text="确认支付"
+                    android:textColor="#ffffffff"
+                    android:textSize="14.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/daifu_lin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/find_daifu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_round_5dp1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="找人代付"
+                        android:textColor="@color/result_view"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/new_erweima"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_round_5dp1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="生成二维码"
+                        android:textColor="@color/result_view"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/re_fen1"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_quanbu"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t全部分类"
+                android:textColor="#595959" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#f0f0f0" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_fen2"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_chaoliu"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t潮流服饰"
+                android:textColor="#595959" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f0f0f0"
+    ></LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/re_fen3"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_shipin"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t食品保障"
+                android:textColor="#595959" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#f0f0f0" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_fen4"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_gehu"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t个护化妆"
+                android:textColor="#595959" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f0f0f0"
+    ></LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/re_fen5"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_jujia"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t居家百货"
+                android:textColor="#595959" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#f0f0f0" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_fen6"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_piju"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t皮具箱包"
+                android:textColor="#595959" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f0f0f0"
+    ></LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/re_fen7"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_shenghuo"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t生活家电"
+                android:textColor="#595959" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#f0f0f0" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_fen8"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_phone"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t手机数码"
+                android:textColor="#595959" />
+        </RelativeLayout>
+    </LinearLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f0f0f0"
+    ></LinearLayout>
+
+
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/re_fen9"
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_jingpin"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t精品鞋城"
+                android:textColor="#595959" />
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:background="@drawable/new_page_dianji"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/dh_chaoliu"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="\t潮流服饰"
+                android:textColor="#595959" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+   
+
+</LinearLayout>

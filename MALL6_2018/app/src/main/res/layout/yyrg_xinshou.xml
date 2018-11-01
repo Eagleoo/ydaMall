@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="#f37d90" >
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/topback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="新手指南"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yyrg_1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yyrg001" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yyrg002" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yyrg003" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yyrg004" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d90303"
+                    android:textSize="17sp"
+                    android:text="◇  什么是一元热购" />
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="\t\t1元热购是一种新型的网购模式，只需1元就有可能买到一件商品。1元热购把一件商品平分成若干“等份”出售，每份1元，当一件商品所有“等份”售出后抽出一名幸运者，该幸运者即可获得此商品。"
+                    />
+                  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d90303"
+                    android:textSize="17sp"
+                    android:text="◇  一元热购规则" />
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="\t\t1、每件商品参考市场价平分成相应“等份”，每份1元，1份对应1个热购码。\n\t\t2、同一件商品可以购买多次或一次购买多份。\n\t\t3、当一件商品所有“等份”全部售出后计算出“幸运热购码”，拥有“幸运热购码”者即可获得此商品。\n\t\t4、幸运热购码计算方式：\n\t\t\t\t1）取该商品最后购买时间前网站所有商品100条购买时间记录。\n\t\t\t\t2）时间按时、分、秒、毫秒依次排列组成一组数值。\n\t\t\t\t3）将这100组数值之和除以商品总需参与人次后取余数，余数加上10000001即为“幸运热购码”。"
+                    />
+
+                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#d90303"
+                    android:textSize="17sp"
+                    android:text="◇  一元热购流程" />
+                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1、挑选商品\n\t\t进入一元热购商品大全页面，挑选自己喜欢的产品。产品包括居家百货、个护化妆、手机数码、生活家电、食品保健五大类别，均为生活必需品、时尚流行畅销的商品。（一元热购产品均包邮且为常规市场价，部分产品与远大商城销售价产生不一致请知悉。）\n2、支付1元\n\t\t通过远大现有支付方式：网银、银联、支付宝、系统账户（充值账户和商币账户）支付1元即购买1人次，获得1个“热购码” （随机获取）。同一件商品可购买多次或一次购买多份，购买的“热购码”越多，获得商品的几率越大。\n3、揭晓获得者\n\t\t当一件商品达到总参与人次，抽出1名商品获得者，远大云商或打电话或短信确认通知。\n\t\t注：\n\t\t1）商品揭晓后您可登录\“我的1元热购\”查询详情，未获得商品的用户不会收到电话或短信通知；\n\t\t2）商品揭晓后，请及时登录\“我的1元热购\”完善个人资料，以便我们能够准确无误地为您配送商品。\n\t\t3）所有已揭晓商品均不给予退款。\n\t\t4）当参与人数未达到总需要人数时，产品因缺货及其他原因导致不能揭晓该产品时，每人支付金额返回到充值账户。\n4、晒单分享\n\t\t晒出您收到的商品实物图片甚至您的靓照，说出您的热购心得，让大家一起分享您的快乐。 在您收到商品后，您只需登录网站完成晒单，并通过审核，即可获得10个商币奖励。在您成功晒单后，您的晒单会出现在网站“晒单分享”区，与大家分享喜悦。"
+                    android:textSize="14sp" />
+                 <Button
+                        android:id="@+id/goumai"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dip"
+                        android:background="#f37d90"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="立即参与1元热购"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

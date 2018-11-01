@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:orientation="vertical"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:background="@color/bg"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_bk9"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="会员帐号："
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/huiyuanid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/liner2_border_white"
+                    android:ems="8"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="招  商  人："
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/zhaoshang"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/liner2_border_white"
+                    android:ems="8"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="推  荐  人："
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/tuijian"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/liner2_border_white"
+                    android:ems="8"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text1"
+            android:layout_below="@+id/linn1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/card_bk9"
+            android:divider="#f0f0f0"
+            android:dividerHeight="1px"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/card_bk1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="完成"
+            android:textColor="@color/bg" />
+    </RelativeLayout>
+
+</LinearLayout>

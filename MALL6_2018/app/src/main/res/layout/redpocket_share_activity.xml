@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/community_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_redpocket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100元已装入20个红包。"
+            android:textColor="#f7b406"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="按提示选择好友群，红包将由群内的好友来抢， 拼拼谁的手气好。"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/community_green2gray_round_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="给群里的好友发红包"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+             android:id="@+id/tv_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/community_yellow2gray_round_selector"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="查看我的发放记录"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/redpocket_share" />
+    </LinearLayout>
+
+</LinearLayout>

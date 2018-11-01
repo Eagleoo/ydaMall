@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:id="@+id/detail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/liner2_border_white"
+        android:layout_below="@id/amdTop"
+        android:orientation="horizontal" >
+
+
+        <RelativeLayout
+            android:id="@+id/downline"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7">
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="收入类型"
+
+                android:textColor="#535353" >
+            </TextView>
+            <ImageView
+                android:id="@+id/downiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rightbottom"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/y3"
+                android:layout_marginRight="@dimen/y3"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#cccccc" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+
+            android:gravity="center_vertical|center_horizontal"
+            android:text="收入金额"
+            android:textColor="#535353" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#cccccc" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yu_e"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+
+            android:gravity="center_vertical|center_horizontal"
+            android:text="余额"
+            android:textColor="#535353"></TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#cccccc" >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="日期"
+
+            android:textColor="#535353" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

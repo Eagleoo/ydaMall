@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_light_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/community_top" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/liner_border_white"
+            android:hint="景点名称"
+            android:padding="10dp"
+            android:textColor="@color/bg"
+            android:textColorHint="#c6c6c6"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/community_search" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/scenic_spot_city"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="成都"
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/scenic_spot_location"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="附近景点"
+                    android:textColor="@color/yyrg_shouye_zi"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="特别推荐"
+                android:textColor="@color/headertop"
+                android:textSize="14sp" />
+
+            <com.mall.serving.community.view.gridview.NoScrollGridView
+                android:id="@+id/gv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:padding="5dp"
+                android:verticalSpacing="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="热门城市"
+                android:textColor="@color/headertop"
+                android:textSize="14sp" />
+
+            <com.mall.serving.community.view.gridview.NoScrollGridView
+                android:id="@+id/gv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:padding="5dp"
+                android:verticalSpacing="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="热门景点"
+                android:textColor="@color/headertop"
+                android:textSize="14sp" />
+
+            <com.mall.serving.community.view.gridview.NoScrollGridView
+                android:id="@+id/gv_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:padding="5dp"
+                android:verticalSpacing="1dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

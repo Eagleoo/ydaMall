@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="top"
+    android:isScrollContainer="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/updateUserInfoTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            layout="@layout/top" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@id/updCenter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateUserInfoTop"
+        android:isScrollContainer="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="真实姓名"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@id/bank_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:hint="请输入真实姓名"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="#7c7b7b"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="开户姓名"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@id/bank_accountName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:hint="请输入开户姓名"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="#7c7b7b"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="开户银行"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@id/bank_bankName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1.0"
+                        android:drawableRight="@drawable/bank_banner_btn"
+                        android:padding="5dp"
+                        android:text="选择银行"
+                        android:textColor="#7c7b7b"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="银行卡号"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@id/bank_bankCard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:hint="请输入银行卡号"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="身份证号"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@id/bank_idCard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="请输入身份证号"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/phone_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="联系电话"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@id/bank_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:hint="请输入联系电话"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yzmpic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="图形验证"
+                        android:textColor="#383838" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+                        
+                        <EditText
+                        android:id="@+id/yzmpic_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        android:hint="请输入图形验证码"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/black_gray"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/yzmpic_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/yanzhengma"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="验证码"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/update_basic_user_info_code"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="4"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:hint="请输入您的验证码"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="#535353"
+                            android:textColorHint="#c6c6c6"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/update_basic_user_info_send_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginBottom="7dp"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/corner_round_5dp"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="获取验证码"
+                            android:textColor="#2498e2"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.45"
+                        android:gravity="center"
+                        android:text="交易密码"
+                        android:textColor="#383838"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@id/bank_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@color/white"
+                        android:hint="请输入交易密码"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f6f6f6" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updCenter"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/bank_sub"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="3.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/card_bk1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="确认"
+            android:textColor="@color/bg"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@id/bank_cle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/card_bk2"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="清空"
+            android:textColor="@color/bg"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

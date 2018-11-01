@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:background="#ffffff" 
+          
+      >
+    
+    <TextView
+         android:id="@+id/contentjoke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   android:textSize="15sp"
+          android:padding="8dp"
+        android:text="~"
+        android:textColor="@color/black"
+                />
+    
+    <TextView 
+        android:id="@+id/timetv"
+            android:layout_below="@+id/contentjoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="2017年8月28日"
+		android:gravity="bottom"
+		android:layout_marginLeft="8dp"
+android:paddingBottom="8dp"
+         android:textColor="#ADADAD"
+         android:layout_alignParentBottom="true"
+        />
+    
+<ImageView
+  android:layout_below="@+id/contentjoke"
+    android:id="@+id/sharejoke" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/jokechare"
+    android:layout_alignParentRight="true"
+	android:layout_alignParentBottom="true"
+	android:scaleType="fitEnd"
+android:paddingBottom="8dp"
+android:paddingRight="8dp"
+    />
+
+</RelativeLayout>

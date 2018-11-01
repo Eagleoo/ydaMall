@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="交易密码："
+                    android:textColor="#ff535353" />
+
+                <EditText
+                    android:id="@id/set_two1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:hint="请输入您的交易密码"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:textColor="#ff535353"
+                    android:textColorHint="#ddd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="确认交易密码："
+                    android:textColor="#ff535353" />
+
+                <EditText
+                    android:id="@id/set_two2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:hint="请确认您的交易密码"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:textColor="#ff535353"
+                    android:textColorHint="#ddd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@id/set_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_marginRight="35.0dip"
+                    android:background="@drawable/liner2_border_eeeeee"
+                    android:padding="8.0dip"
+                    android:text="保存信息" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/liner2_border_green"
+                android:orientation="vertical"
+                android:padding="10.0dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示："
+                    android:textColor="#ccc"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="交易密码请采用纯数字，并且不少于6位；为了你的账号安全，密码设置不要过于简单!"
+                    android:textColor="#ccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="建议最好不要使用以下规则的密码："
+                    android:textColor="#ccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="\u00091、递增的数字组合；比如123456、234567等"
+                    android:textColor="#ccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="\u00092、递减的数字组合；比如654321、765432等"
+                    android:textColor="#ccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="\u00093、单一的数字；比如：111111等"
+                    android:textColor="#ccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="\u00094、以下组合：123321，123123，321123，321321，135246。"
+                    android:textColor="#ccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:text="\u00095、电话、银行卡、身份证相同或部分匹配；"
+                    android:textColor="#ccc" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

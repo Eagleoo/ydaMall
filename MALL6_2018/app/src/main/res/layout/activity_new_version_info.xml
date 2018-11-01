@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mall.view.NewVersionInfoActivity">
+
+    <RelativeLayout
+        android:id="@id/top_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="top"
+        android:background="#FC0D2A"
+        android:orientation="horizontal"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip"
+        tools:context=".LoginFrame">
+
+        <ImageView
+            android:id="@id/topback"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="20.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/community_topback_selector" />
+
+        <TextView
+            android:id="@id/topCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="版本说明"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

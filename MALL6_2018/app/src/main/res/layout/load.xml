@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitStart" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bannerbackground" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/y10"
+        android:gravity="center"
+        android:paddingBottom="@dimen/y2"
+        android:paddingLeft="@dimen/x2"
+        android:paddingRight="@dimen/x2"
+        android:paddingTop="@dimen/y2"
+        android:text="跳 过"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/load">
+
+        <ImageView
+            android:id="@id/load_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/load_font" />
+
+        <ImageView
+            android:id="@id/load_font_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load_font"
+            android:layout_margin="15.0dip"
+            android:src="@drawable/load_font_1" />
+
+        <ProgressBar
+            android:id="@id/laod_gress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="12.0dip"
+            android:layout_below="@id/load_font_1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@android:color/transparent"
+            android:indeterminate="true"
+            android:progressDrawable="@drawable/progress_bar_layer" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/laod_gress"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/load_xiaohuoban" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20.0dip"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7.0dip"
+                android:src="@drawable/load_phone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/toshopmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

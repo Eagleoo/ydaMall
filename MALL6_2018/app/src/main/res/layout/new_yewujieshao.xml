@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <TextView
+        android:id="@+id/new_jieshao_huiyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybranch_dianji"
+        android:drawableLeft="@drawable/new_my_hyjs"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/new_my_you"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="\t〔注册会员〕简介"
+        android:textColor="@color/new_my_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f6f6f6" />
+
+    <TextView
+        android:id="@+id/new_jieshao_chaungye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybranch_dianji"
+        android:drawableLeft="@drawable/new_my_cykjjj"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/new_my_you"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="\t〔城市经理〕简介"
+        android:textColor="@color/new_my_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f6f6f6" />
+
+    <TextView
+        android:id="@+id/new_jieshao_lianm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybranch_dianji"
+        android:drawableLeft="@drawable/new_my_lmsjjj"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/new_my_you"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="\t〔商圈系统〕简介"
+        android:textColor="@color/new_my_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f6f6f6" />
+
+    <TextView
+        android:id="@+id/new_hudong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybranch_dianji"
+        android:drawableLeft="@drawable/new_hudong_sq"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/new_my_you"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="\t〔远大社区〕简介"
+        android:textColor="@color/new_my_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f6f6f6" />
+
+    <TextView
+        android:id="@+id/new_jieshao_csyyzx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybranch_dianji"
+        android:drawableLeft="@drawable/new_my_csyyzxjj"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/new_my_you"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="\t城市运营中心查询"
+        android:textColor="@color/new_my_color"
+        android:visibility="gone" />
+</LinearLayout>

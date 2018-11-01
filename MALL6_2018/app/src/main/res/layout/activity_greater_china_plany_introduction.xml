@@ -1,0 +1,200 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffffff"
+    android:orientation="vertical" 
+ >
+
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+         android:background="#ff2145"
+        >
+         <com.mall.serving.community.view.textview.TextViewBack
+        android:id="@+id/top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/community_press_blue_deep_selector"
+        android:drawableLeft="@drawable/community_topback_selector"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+      />
+         
+          <TextView
+            android:id="@+id/top_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+               android:singleLine="true"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="18.0sp" />
+        
+    </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/jianjietv1"
+            
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4.0dip"
+                android:text=""
+                android:textSize="12sp" />
+            
+                      <TextView
+                android:id="@+id/jianjietv2"
+            
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4.0dip"
+                android:text=""
+                android:textSize="12sp" />
+            
+                      
+                             <TextView
+                android:id="@+id/jianjietv3"
+            
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4.0dip"
+                android:text=""
+                android:textSize="12sp" />
+                                           <TextView
+                android:id="@+id/jianjietv4"
+            
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4.0dip"
+                android:text=""
+                android:textSize="12sp" />
+                                                                         <TextView
+                android:id="@+id/jianjietv5"
+            
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="4.0dip"
+                android:text=""
+                android:textSize="12sp" />
+                                                                         
+<RelativeLayout 
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"    
+    >
+    <TextView
+        android:id="@+id/tag1" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="中央军民融合发展委员会幸福大中华执行机构"
+        android:textSize="12sp"
+          android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        />
+    <TextView 
+        android:layout_below="@+id/tag1"
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="志愿者双创（福利）计划组委会"
+           android:textColor="#000000"
+           android:textSize="12sp"
+             android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+           android:layout_alignParentRight="true"
+        />
+    <TextView 
+        android:layout_below="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+               android:textColor="#000000"
+           android:textSize="12sp"
+           android:text="2017年7月25日"
+             android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+           android:layout_alignParentRight="true"
+        />
+    
+</RelativeLayout>
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+    >
+      <TextView
+               
+               		android:id="@+id/tomain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textview_rounded_big"
+                    android:gravity="center"
+                    android:text="返回首页"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+     <TextView
+              		android:id="@+id/toapply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textview_rounded_big"
+                    android:gravity="center"
+                    android:text="申请加入"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" 
+                     android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+    
+</LinearLayout>
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

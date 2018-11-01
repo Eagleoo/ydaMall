@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/product_item_line_lin"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="horizontal"
+    android:padding="5.0dip" >
+
+    <ImageView
+        android:id="@id/prod_img"
+        android:layout_width="100.0dip"
+        android:layout_height="90.0dip"
+        android:layout_margin="5.0dip"
+        android:src="@drawable/zw174" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/prod_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="15.0dip"
+            android:singleLine="false"
+            android:text="产品名称"
+            android:textColor="#ff696969" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+                
+               <LinearLayout 
+                   android:layout_width="fill_parent"
+                   android:layout_height="20dp"
+                   android:orientation="horizontal">
+                   <TextView
+                    android:id="@id/prod_ypri"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="15.0dip"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:text="市场售价：￥1230.00"
+                    android:textColor="#ff737373" />
+                   <LinearLayout 
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="0.2"
+                       android:layout_gravity="center_vertical"
+                       android:orientation="horizontal">
+                         <TextView 
+                         android:textSize="12sp"
+                         android:id="@+id/huodong_dicount"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/dicount_bg"
+                         android:text="0.8折"
+                         android:textColor="@color/white"
+                         android:layout_gravity="left"
+                         android:gravity="center"/>
+                   </LinearLayout>
+                   
+               </LinearLayout>
+                <TextView
+                    android:id="@id/prod_pri"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="15.0dip"
+                    android:text="远大售价：￥123"
+                    android:textColor="#ffeb3201" />
+
+                <TextView
+                    android:id="@id/prod_jjff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="15.0dip"
+                    android:text="可用消费券：￥123"
+                    android:textColor="#ff6ac334" />
+
+                <ImageView
+                    android:id="@id/product_item_right_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:drawablePadding="0.0dip"
+                    android:src="@drawable/img_ljgm"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

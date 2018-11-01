@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/headertop"
+    android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/top_back"
+            android:drawableLeft="@drawable/topback"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:layout_marginLeft="10dip"
+            android:textColor="#ffffffff"
+            android:textSize="13.5sp" />
+        
+    <TextView
+        android:id="@+id/toptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="电影票订单"
+        android:textColor="#ffffff" />
+</RelativeLayout>
+
+
+    <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/headertop"
+      >
+      <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:orientation="horizontal"
+      android:layout_margin="10dp"
+      android:background="@drawable/order_biankuang"
+      >
+     <FrameLayout 
+         android:id="@+id/fi1"
+         android:layout_width="0dp"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         >
+         <LinearLayout 
+             android:id="@+id/sanyuenei"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:background="@drawable/order_biankuang1"
+             android:orientation="vertical"
+             ></LinearLayout>
+          <TextView 
+              android:id="@+id/jinsanyue"
+          android:layout_width="fill_parent"
+          android:gravity="center|center_vertical"
+          android:layout_gravity="center"
+          android:layout_marginLeft="4dp"
+          android:textColor="@color/headertop"
+          android:layout_height="fill_parent"
+          android:background="@color/bg"
+          android:text="近三月订单"
+          />
+     </FrameLayout>
+      <LinearLayout 
+          android:layout_width="1dp"
+          android:layout_height="fill_parent"
+          android:background="@color/bg"
+          ></LinearLayout>
+       <FrameLayout 
+           android:id="@+id/fi2"
+         android:layout_width="0dp"
+         android:layout_height="fill_parent"
+         android:layout_weight="1"
+         >
+         <LinearLayout 
+             android:id="@+id/sanyueqian"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical"
+             android:background="@drawable/order_biankuang1"
+             android:visibility="invisible"
+             ></LinearLayout>
+          <TextView 
+              android:id="@+id/sanyue_qian"
+          android:layout_width="fill_parent"
+          android:gravity="center|center_vertical"
+          android:layout_gravity="center"
+          android:layout_marginRight="5dp"
+          android:textColor="@color/bg"
+          android:layout_height="fill_parent"
+          android:text="三月前订单"
+          />
+     </FrameLayout>
+  </LinearLayout>
+  </LinearLayout>
+    <ListView
+        android:id="@+id/phone_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:divider="#E3E3E3"
+        android:dividerHeight="1dp" >
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:gravity="fill"
+            android:isScrollContainer="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_8">
+
+
+                <com.mall.util.CircleImageView
+                    android:id="@+id/areaitem_cv"
+                    android:layout_width="@dimen/space_50"
+                    android:layout_height="@dimen/space_50"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/new_huiyuan_logo" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/areaitem_cv">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="远大云商"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:text="2017-05-21"
+                        android:textColor="#999999" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/boxwhite"
+                    android:padding="@dimen/space_2"
+                    android:text="+关注"
+                    android:textColor="#C0C0C0"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/message_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_8"
+                android:text="远大事业，事业远大"
+                android:textSize="15sp" />
+
+            <com.jaeger.ninegridimageview.NineGridImageView
+                android:id="@+id/csg_images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                app:imgGap="4dp"
+                app:showStyle="fill"
+                app:singleImgSize="120dp"
+
+                />
+
+            <com.mall.view.MoreTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_5"
+                android:drawablePadding="@dimen/space_5"
+                android:gravity="center"
+                android:text="广东深圳圈"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:visibility="gone"
+
+                app:drawable_src="@drawable/weizhi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_8"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.mall.view.MoreTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/space_8"
+                        android:gravity="center"
+                        android:text="128"
+                        android:textSize="12sp"
+                        app:drawable_src="@drawable/shoucang"
+                        app:imageHight="@dimen/space_15"
+                        app:imageLocation="left"
+                        app:imageWidth="@dimen/space_15" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#F2F2F2" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.mall.view.MoreTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="@dimen/space_8"
+                        android:gravity="center"
+                        android:text="28"
+                        android:textSize="12sp"
+                        app:drawable_src="@drawable/huifu"
+                        app:imageHight="@dimen/space_15"
+                        app:imageLocation="left"
+                        app:imageWidth="@dimen/space_15" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#F2F2F2" />
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.mall.view.MoreTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="@dimen/space_8"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="12sp"
+                        app:drawable_src="@drawable/zhuanfa"
+                        app:imageHight="@dimen/space_15"
+                        app:imageLocation="left"
+                        app:imageWidth="@dimen/space_15" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <com.mall.util.ListViewForScrollView
+                android:id="@+id/commentarieslist_lfs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/postcommentaries_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E0E0E0" />
+
+        <include
+            layout="@layout/business_circle_custom_facere"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

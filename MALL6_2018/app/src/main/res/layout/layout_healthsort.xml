@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/healthAdd"
+                android:layout_width="280px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="购物车"
+                android:textColor="@color/gray"
+                android:textSize="40px"
+                app:drawable_src="@drawable/he1"
+                app:imageHight="97px"
+                app:imageLocation="top"
+                app:imageWidth="97px" />
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/healthAddress"
+                android:layout_width="270px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="收货地址"
+                android:textColor="@color/gray"
+                android:textSize="40px"
+                app:drawable_src="@drawable/he2"
+                app:imageHight="97px"
+                app:imageLocation="top"
+                app:imageWidth="97px" />
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/healthOrder"
+                android:layout_width="270px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="我的订单"
+                android:textColor="@color/gray"
+                android:textSize="40px"
+                app:drawable_src="@drawable/h3"
+                app:imageHight="97px"
+                app:imageLocation="top"
+                app:imageWidth="97px" />
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/healthShop"
+                android:layout_width="270px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="我的销售"
+                android:textColor="@color/gray"
+                android:textSize="40px"
+                app:drawable_src="@drawable/h4"
+                app:imageHight="97px"
+                app:imageLocation="top"
+                app:imageWidth="97px" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>

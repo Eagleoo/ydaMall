@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/app_e_borand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="小米"
+            android:textColor="#535353" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/app_e_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="XiaoMi 3C"
+            android:textColor="#535353" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/app_e_ysversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="4.0.4"
+            android:textColor="#535353" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_e_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Process cur broadcast BroadcastRecord{42c527f8 u-1 android.net.wifi.SCAN_RESULTS} DELIVERED for app ProcessRecord{42b5eb10 1675:com.qualcomm.services.location/1000}"
+        android:textColor="#535353" >
+    </TextView>
+
+</LinearLayout>

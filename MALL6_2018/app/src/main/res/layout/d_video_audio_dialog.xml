@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bk12"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:padding="2dp"
+                android:src="@drawable/cross"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/video_audio_dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/space_5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="温馨提示"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_19" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/video_audio_dialog_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="2017-7-21"
+            android:textColor="#9A9A9A"
+            android:textSize="@dimen/text_size_15"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/linview1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFDF" />
+
+    <TextView
+        android:id="@+id/video_audio_dialog_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="10dp"
+        android:text="由于远大视频还在建设之中,目前所有视频和音频均系跳转到第三方平台播放,跳转后如需返回,按手机(返回键)"
+        android:textColor="#626364"
+
+        />
+
+    <View
+        android:id="@+id/linview2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFDF" />
+
+    <LinearLayout
+        android:id="@+id/dialogtag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="辅导 老师: 刘江"
+            android:textColor="#626364" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogtag2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="联系方式 : 刘江"
+            android:textColor="#626364"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogtag3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line3a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="类型："
+            android:textColor="#626364" />
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line3b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="类型："
+            android:textColor="#626364" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogtag4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line4a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="金额："
+            android:textColor="#626364" />
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line4b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="类型："
+            android:textColor="#626364" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogtag5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line5a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="交易单号："
+            android:textColor="#626364" />
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line5b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="类型："
+            android:textColor="#626364" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogtag6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line6a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="交易描述："
+            android:textColor="#626364" />
+
+        <TextView
+            android:id="@+id/video_audio_dialog_line6b"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="8dp"
+            android:text="类型："
+            android:textColor="#626364" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogtag7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/downline"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <EditText
+            android:id="@+id/video_audio_dialog_line7a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:background="@null"
+            android:enabled="true"
+            android:hint="请输入原因"
+            android:padding="8dp"
+            android:textColor="#626364" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/video_audio_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#eeeeee"
+            android:padding="8dp"
+            android:text="取消"
+            android:textColor="@color/black"
+
+            />
+
+        <Button
+            android:id="@+id/video_audio_dialog_sure"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/maincolor"
+            android:padding="8dp"
+            android:text="确定跳转"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FDC913">
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="#FF2145">
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/community_topback_selector"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="红包盒"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDC913"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/hbhheader"
+                app:layout_scrollFlags="scroll|enterAlways"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/y10"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/weikaiqi_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:text="未开启"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/darkredbox"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_15"
+                        android:paddingTop="@dimen/space_9"
+                        android:paddingBottom="@dimen/space_9"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_marginRight="@dimen/space_15"
+                        />
+
+                    <TextView
+                        android:id="@+id/yikaiqi_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_marginRight="@dimen/space_15"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/space_9"
+                        android:paddingTop="@dimen/space_9"
+                        android:text="已开启"
+                        android:textColor="#000000"
+                        android:background="@drawable/goldbox"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/yilingqu_tv"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:text="已领取"
+                        android:textColor="#000000"
+                        android:background="@drawable/goldbox"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size_15"
+                        android:paddingTop="@dimen/space_9"
+                        android:paddingBottom="@dimen/space_9"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_marginRight="@dimen/space_15"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/xiaoxitongji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_15"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <!--  <com.pulltorefresh.PullToRefreshListView
+              android:id="@+id/refreshable_view"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+          </com.pulltorefresh.PullToRefreshListView>-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_marginRight="@dimen/space_15"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:divider="@null"
+            android:visibility="gone"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/new_headertop"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:clickable="true"
+            android:drawableLeft="@drawable/topback"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="13.5sp" />
+
+        <TextView
+            android:id="@+id/toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="网络电话"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_headertop" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/order_biankuang"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:id="@+id/money"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/money_charge_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/order_biankuang1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/money_charge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/bg"
+                    android:gravity="center|center_vertical"
+                    android:text="现金充值订单"
+                    android:textColor="@color/new_headertop" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/bg" >
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/card"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/card_charge_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/order_biankuang1"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/card_charge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center|center_vertical"
+                    android:text="充值卡订单"
+                    android:textColor="@color/bg" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.01dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/white" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/money_charge_topLine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/new_headertop" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="订单编号"
+            android:textColor="@color/bg" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值面额"
+            android:textColor="@color/bg" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单状态"
+            android:textColor="@color/bg" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </View>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单日期"
+            android:textColor="@color/bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_charge_topLine"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#49afef"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="订单卡号"
+            android:textColor="@color/bg" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值面额"
+            android:textColor="@color/bg" />
+
+        <View
+            android:layout_width="0.01dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+        </View>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="订单日期"
+            android:textColor="@color/bg" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/money_charge_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:cacheColorHint="@color/white"
+        android:divider="#e9e9e9"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/card_charge_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:cacheColorHint="@color/white"
+        android:divider="#e9e9e9"
+        android:dividerHeight="0dp"
+        android:visibility="gone" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/nocharge_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="您还没有充过值，赶紧去充值吧。" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/title_ic"
+                android:layout_width="102px"
+                android:layout_height="102px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="27px"
+                android:layout_marginRight="27px"
+                android:src="@drawable/cartitleiv" />
+
+            <View
+                android:layout_width="5px"
+                android:layout_height="90px"
+                android:layout_gravity="center_vertical"
+                android:background="#e3e4e4" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="27px"
+                android:layout_weight="1">
+
+
+                <ViewFlipper
+                    android:id="@+id/vfp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoStart="true"
+                    android:flipInterval="3000"
+                    android:inAnimation="@anim/anim_in"
+                    android:outAnimation="@anim/anim_out" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</layout>

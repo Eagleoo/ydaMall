@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/doubleup"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:onClick="clickKnown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="戳这里，查看 关注的人"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_conner"
+        android:padding="7dp"
+        />
+
+
+
+</LinearLayout>

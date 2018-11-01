@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="@color/headertop" >
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/topback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="名片二维码"
+            android:textColor="@color/bg"
+            android:textSize="20sp" />
+
+       
+        
+    </RelativeLayout>
+    <ImageView 
+        android:id="@+id/erweima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="让别人扫描你的二维码即可交换名片"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/card_qianhei"
+        />
+    <TextView 
+        android:id="@+id/to_saomiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描朋友的二维码"
+        android:background="@drawable/card_bk1"
+        android:textColor="@color/bg"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

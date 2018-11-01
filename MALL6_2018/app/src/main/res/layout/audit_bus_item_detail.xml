@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/aududit_item_detail_userId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="申请会员：联盟商家001"
+            android:textColor="#535353" />
+
+        <TextView
+            android:id="@+id/aududit_item_detail_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="申请金额：联盟商家001"
+            android:textColor="#535353" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="申请时间：2014-10-13"
+            android:textColor="#535353" />
+
+        <TextView
+            android:id="@+id/aududit_item_detail_state"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="申请状态：处理中"
+            android:textColor="#535353" />
+
+        <TextView
+            android:id="@+id/aududit_item_detail_busType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="申请业务：蓝钻"
+            android:textColor="#535353" />
+
+        <TextView
+            android:id="@+id/aududit_item_detail_payType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="申请方式：现金"
+            android:textColor="#535353" />
+
+        <TextView
+            android:id="@+id/aududit_item_detail_handle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="处理人：现金"
+            android:textColor="#535353" />
+
+        <RadioGroup
+            android:id="@+id/aududit_item_detail_moneyLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/aududit_item_detail_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="0"
+                android:text="充值账户：10235.00"
+                android:textColor="#535353"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/aududit_item_detail_rai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:tag="1"
+                android:text="权益账户：10235.00"
+                android:textColor="#535353"
+                android:textSize="11sp" />
+
+            <RadioButton
+                android:id="@+id/aududit_item_detail_zcb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:gravity="center"
+                android:tag="2"
+                android:text="创业包：10235.00"
+                android:textColor="#535353"
+                android:textSize="11sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/aududit_item_detail_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:gravity="top"
+            android:hint="请输入您的审批备注..."
+            android:lines="3"
+            android:maxLines="5"
+            android:padding="5dp"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textColorHint="#c6c6c6"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/aududit_item_detail_pwdLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="交易密码："
+                android:textColor="#535353" />
+
+            <EditText
+                android:id="@+id/aududit_item_detail_twoPwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的交易密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="#c6c6c6" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

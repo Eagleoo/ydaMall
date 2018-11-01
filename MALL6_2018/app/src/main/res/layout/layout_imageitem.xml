@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.mall.view.SquareImageView
+            android:id="@+id/item_image"
+            android:layout_width="234px"
+            android:layout_height="234px"
+            android:layout_marginBottom="20px"
+            android:layout_marginRight="20px"
+            android:background="#f4f4f4"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+</layout>

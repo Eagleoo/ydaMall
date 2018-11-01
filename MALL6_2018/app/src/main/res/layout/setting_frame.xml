@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/liner_border_white_no_fillet"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="个人信息"
+            android:textColor="#393939" />
+
+        <TextView
+            android:id="@+id/real_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="实名认证"
+            android:textColor="#393939" />
+
+        <TextView
+            android:id="@+id/exchange_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="换绑手机"
+            android:textColor="#393939" />
+
+        <TextView
+            android:id="@+id/login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="登录密码"
+            android:textColor="#393939" />
+
+        <TextView
+            android:id="@+id/two_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="支付密码"
+            android:textColor="#393939" />
+
+        <TextView
+            android:id="@+id/bindingqq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="\tQQ"
+            android:textColor="#393939"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/address_manager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="收货地址管理"
+            android:textColor="#393939" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/liner_border_white_no_fillet"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setting_nettest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="网络测试"
+            android:textColor="#393939" />
+
+        <TextView
+            android:id="@+id/setting_about_me"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/arrow_right_gray"
+            android:padding="10dp"
+            android:text="关于远大"
+            android:textColor="#393939" />
+
+        <RelativeLayout
+            android:id="@+id/check_version"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="当前版本号"
+                android:textColor="#393939" />
+
+            <ImageView
+                android:id="@+id/version_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/version"
+                android:visibility="gone"
+                android:src="@drawable/new_version" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#393939"
+                tools:text="5.3.2" />
+
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/wificheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:padding="10dp"
+            android:text="wifi下自动更新"
+            android:textColor="#393939"
+            android:theme="@style/MyCheckBox" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setting_exit_login"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/coner_round_5dp_headtop"
+            android:text="退出登录"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/setting_clear_cache"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_round_5dp_green"
+            android:text="清除缓存"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

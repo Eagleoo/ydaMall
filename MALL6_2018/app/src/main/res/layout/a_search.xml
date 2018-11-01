@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/a_search_top1"
+        layout="@layout/goods_type_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" />
+
+    <LinearLayout
+        android:id="@+id/a_search_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/a_search_top1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:id="@id/linearLayout_focus"
+            android:layout_width="0dp"
+            android:layout_height="33.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.8"
+            android:background="@drawable/textview_round_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip">
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:drawableRight="@drawable/new_shouye_sousuo"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingRight="5.0dip"
+                android:text="商品"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@id/serachText"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.75"
+                android:background="@null"
+                android:drawableLeft="@drawable/new_page_xian"
+                android:gravity="center_vertical"
+                android:hint="请输入关键词"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#535353"
+                android:textColorHint="#c6c6c6"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/speak"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:src="@drawable/speak"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/sbtn_bule"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/a_search_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/gray_text"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/a_search_top"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/progress_round"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/a_search_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.01dp"
+                    android:background="@color/side_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.01dp"
+                    android:background="@color/side_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="暂无相关内容~~"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.01dp"
+                    android:background="@color/side_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

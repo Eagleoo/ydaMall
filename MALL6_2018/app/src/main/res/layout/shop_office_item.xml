@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/office_pro"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/office_product" />
+                  
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="涉趣2014冬季新款甜美系真皮羊毛搭扣瘦脚厚底短靴雪地靴W05852"
+        android:textColor="#4e4e4e"
+        android:textSize="14sp" />
+<TextView
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sb_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="商币兑换：1120"
+        android:textColor="#4e4e4e"
+        android:textSize="12sp" />
+ 
+     <LinearLayout 
+           android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+         android:background="#FAFAFA"></LinearLayout>
+       <TextView
+       android:layout_margin="5dp"
+        android:id="@+id/market_price"
+        android:layout_width="fill_parent"       
+        android:layout_height="wrap_content"
+        android:text="市场售价：￥698.00"
+        android:textColor="#4e4e4e"
+        android:textSize="12sp" />
+      <LinearLayout 
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+         android:layout_width="fill_parent"
+         android:layout_height="1dp"
+         android:background="#FAFAFA"></LinearLayout>
+    <TextView
+        android:layout_marginBottom="10dp"
+         android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/yd_price"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="远大售价：￥258.00"
+        android:textColor="#4e4e4e"
+        android:textSize="12sp" />
+
+</LinearLayout>

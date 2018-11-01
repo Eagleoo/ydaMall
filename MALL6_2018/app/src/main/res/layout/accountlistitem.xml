@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/accountitemroot"
+    android:layout_margin="1dp"
+    android:background="#00ffffff"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        >
+
+        <ImageView
+            android:id="@+id/rlback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/pay_banner_ali"
+        />
+        <ImageView
+            android:id="@+id/cardhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pay_item_ali1"
+            android:layout_margin="15dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/cardhead"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+            <TextView
+                android:id="@+id/cardname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝钱包"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/cardid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝号：\n**** **** **** 9516"
+                android:textColor="@color/white"
+                android:layout_below="@+id/cardname"
+                android:textSize="13sp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

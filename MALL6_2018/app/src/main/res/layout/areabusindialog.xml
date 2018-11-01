@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bk12"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="详细信息"
+        android:textColor="#FF2145"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:padding="15dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#FF2145"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="会员帐号 : 1212313456446"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="联系电话 : 1212313456446"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="辅导老师 : 1212313456446"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="系统角色 : 1212313456446"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="所在城市 : 1212313456446"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+        />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册时间 : 1212313456446"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关 闭"
+        android:textColor="#ffffff"
+        android:background="#FF2145"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>

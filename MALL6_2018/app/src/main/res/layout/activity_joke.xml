@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    
+      <RelativeLayout 
+          android:layout_width="match_parent"
+           android:layout_height="50dp"
+    android:background="@color/maincolor"
+    android:gravity="center_vertical"
+          >
+           <com.mall.serving.community.view.textview.TextViewBack
+        android:id="@+id/top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/community_press_blue_deep_selector"
+        android:drawableLeft="@drawable/community_topback_selector"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+           
+               <TextView
+        android:id="@+id/top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+  android:layout_centerInParent="true"
+        android:background="@drawable/community_press_blue_deep_selector"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/white"
+                   android:textSize="20.0dip"
+        android:text="笑话大全" />
+          
+      </RelativeLayout>
+
+    <com.pulltorefresh.PullToRefreshListView
+                    android:id="@+id/refreshable_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" 
+                      android:layout_marginTop="8dp"
+
+                    >
+
+                    <ListView
+                        android:id="@+id/joke_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="#f0f0f0"
+                        android:dividerHeight="10dp"
+                        android:fadingEdge="none" >
+                    </ListView>
+                </com.pulltorefresh.PullToRefreshListView>
+
+</LinearLayout>

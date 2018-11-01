@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="fill"
+    android:isScrollContainer="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8">
+
+
+        <com.mall.util.CircleImageView
+            android:id="@+id/areaitem_cv"
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_50"
+            android:layout_centerVertical="true"
+            android:src="@drawable/new_huiyuan_logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_toRightOf="@+id/areaitem_cv">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="远大云商"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:text="2017-05-21"
+                android:textColor="#999999" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/isattention_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/boxwhite"
+            android:paddingBottom="@dimen/space_2"
+            android:paddingLeft="@dimen/space_8"
+            android:paddingRight="@dimen/space_8"
+            android:paddingTop="@dimen/space_2"
+            android:text="+关注"
+            android:textColor="#C0C0C0"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contenttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8"
+        android:text="远大事业，事业远大"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.jaeger.ninegridimageview.NineGridImageView
+            android:id="@+id/csg_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:visibility="gone"
+            app:imgGap="4dp"
+            app:showStyle="fill"
+            app:singleImgSize="120dp" />
+    </LinearLayout>
+
+
+    <com.mall.view.MoreTextView
+        android:id="@+id/area_mtv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_22"
+        android:layout_margin="@dimen/space_8"
+        android:background="@drawable/boxashes"
+        android:drawablePadding="@dimen/space_5"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_4"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_4"
+        android:text=""
+        android:textColor="#999999"
+        android:textSize="9sp"
+        app:drawable_src="@drawable/weizhi"
+        app:imageHight="@dimen/space_9"
+        app:imageWidth="@dimen/space_9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_8"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/isthumbup_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/isthumbup_mt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="128"
+                android:textSize="12sp"
+                app:drawable_src="@drawable/shoucang"
+                app:imageHight="@dimen/space_15"
+                app:imageLocation="left"
+                app:imageWidth="@dimen/space_15" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2" />
+
+        <RelativeLayout
+            android:id="@+id/leavemessage_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/leavemessage_mt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text="28"
+                android:textSize="12sp"
+                app:drawable_src="@drawable/huifu"
+                app:imageHight="@dimen/space_15"
+                app:imageLocation="left"
+                app:imageWidth="@dimen/space_15" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2" />
+
+
+        <RelativeLayout
+            android:id="@+id/sharebusinessinfo_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.mall.view.MoreTextView
+                android:id="@+id/sharebusinessinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/space_8"
+                android:gravity="center"
+                android:text=""
+                android:textSize="12sp"
+                app:drawable_src="@drawable/zhuanfa"
+                app:imageHight="@dimen/space_15"
+                app:imageLocation="left"
+                app:imageWidth="@dimen/space_15" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

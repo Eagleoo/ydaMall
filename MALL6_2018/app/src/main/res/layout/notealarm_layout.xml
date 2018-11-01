@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+     android:layout_height="50dp"
+        android:background="@color/headertop" >
+	<TextView 
+	    android:layout_width="40dp"
+	    android:layout_height="30dp"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="10dp"
+	    android:drawableLeft="@drawable/topback"
+	    android:id="@+id/top_bcak"
+	    />
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加提醒"
+            android:textColor="@color/white"
+            android:textSize="20dip" >
+        </TextView>
+    </RelativeLayout>
+    <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="记事内容:"
+    android:textColor="@color/yyrg_qianhui"
+    android:textSize="15sp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    />
+<TextView 
+    android:id="@+id/jishi_neirong"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:textColor="@color/yyrg_shouye_zi"
+    android:textSize="16sp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#f0f0f0"
+    ></LinearLayout>
+    <ListView
+        android:id="@+id/alarm_listview"
+        android:layout_width="fill_parent"
+        android:divider="#f0f0f0"
+        android:dividerHeight="3dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

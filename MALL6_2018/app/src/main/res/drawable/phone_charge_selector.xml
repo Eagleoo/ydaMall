@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/phone_charge_shape_no_check" android:state_checked="false"></item>
+    <item android:drawable="@drawable/phone_charge_shape_ok_check2" android:state_checked="true"></item>
+
+</selector>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:background="#f37d90"
+        >
+        <TextView 
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/topback"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="活动揭晓"
+            android:textColor="@color/bg"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/yyrg_my_shenfen" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/yyrg_my_shenfen" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kaijiang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/yyrg_topcolor"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:text="开奖中"
+                android:textColor="@color/bg"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/yyrg_my_shenfen" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/jiexiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="5dp"
+                android:text="已揭晓"
+                android:textColor="@color/yyrg_topcolor"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/yyrg_my_shenfen" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/yyrg_my_shenfen" >
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="开奖中"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:textColor="@color/yyrg_shouye_zi"
+                />
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="已揭晓"
+                android:gravity="center"
+                android:textColor="@color/yyrg_shouye_zi"
+                android:textSize="16sp"
+                android:padding="10dp"
+                 android:background="@color/yyrg_jiexiao"
+                />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:divider="#f0f0f0"
+            android:dividerHeight="1dp"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+</LinearLayout>

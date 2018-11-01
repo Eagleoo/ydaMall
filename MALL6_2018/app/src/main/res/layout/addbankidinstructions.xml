@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/titlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="持卡人说明"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="15dp"
+            />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="为保证账户资金的安全,只能绑定认定用户本人的银行卡"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#f79c9c9b"
+            />
+        <TextView
+            android:id="@+id/close_popwind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="知道了"
+            android:textColor="#2E9BEC"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="15dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

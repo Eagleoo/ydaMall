@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_blue" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/update_user_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/jt"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="\t个人信息"
+            android:textColor="@color/new_my_color" />
+
+        <TextView
+            android:id="@+id/add_bankid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/jt"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="\t银行卡"
+            android:textColor="@color/new_my_color" />
+
+        <TextView
+            android:id="@+id/bindingzhifubao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/jt"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="\t支付宝"
+            android:textColor="@color/new_my_color" />
+
+        <TextView
+            android:id="@+id/bindingwechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/jt"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="\t微信"
+            android:textColor="@color/new_my_color" />
+
+        <TextView
+            android:id="@+id/bindingqq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/jt"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="\tQQ"
+            android:textColor="@color/new_my_color" />
+
+        <TextView
+            android:id="@+id/bindingzhifubao1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/liner2_bottom_border"
+            android:drawableRight="@drawable/jt"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="\t添加支付宝1"
+            android:textColor="@color/new_my_color"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="fill"
+    android:isScrollContainer="true"
+    android:orientation="horizontal"
+
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="麦琪蛋糕点"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/info"
+            android:layout_marginTop="@dimen/space_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#A8A8A8"
+            />
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/itemcheck_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/boxwhite"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>

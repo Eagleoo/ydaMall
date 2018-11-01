@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        android:id="@id/m1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="代理账户："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/sname"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m1"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="购买类型："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/sApplyMode"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m2"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="加盟金额："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/scost"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m3"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="审批状态："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/sstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ffff0000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m4"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="网店类型："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/ssiteType"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/m6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m5"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text="申请时间："
+            android:textColor="#ff737373" />
+
+        <TextView
+            android:id="@id/sdate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3.0dip"
+            android:text=""
+            android:textColor="#ff737373" />
+    </LinearLayout>
+
+</RelativeLayout>

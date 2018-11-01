@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/update_dialig_yuanjiao"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/update_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        
+        android:textSize="15sp"
+        android:textColor="#404040"
+        android:layout_gravity="center"
+        android:text="您将退出此次登录，是否确定？" />
+
+
+ <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#EAEAEA"
+        ></LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+      >
+     <TextView 
+         android:id="@+id/no_tuichu"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textColor="#D6D6D6"
+         android:text="暂不退出"
+         android:padding="10dp"
+         android:textSize="16sp"
+         android:gravity="center"
+         android:background="@drawable/new_page_dianji"
+         />
+     <LinearLayout 
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="#EAEAEA"
+        ></LinearLayout>
+       <TextView 
+           android:id="@+id/queding_tuichu"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content"
+         android:textColor="#404040"
+         android:gravity="center"
+         android:padding="10dp"
+         android:text="确认退出"
+         android:textSize="16sp"
+         android:background="@drawable/new_page_dianji"
+         />
+ </LinearLayout>
+
+</LinearLayout>

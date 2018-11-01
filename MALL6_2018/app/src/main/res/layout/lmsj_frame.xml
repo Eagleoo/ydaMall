@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    >
+
+    <RelativeLayout
+        android:id="@id/top_top"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="#49afef"
+        android:orientation="horizontal"
+        android:paddingLeft="3.0dip"
+        android:paddingRight="3.0dip">
+
+        <ImageView
+            android:id="@id/topback"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/community_topback_selector" />
+
+        <TextView
+            android:id="@id/topCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="联盟商家"
+            android:textColor="#ffffffff"
+            android:textSize="20.0dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/lmsj_ditu_2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:src="@drawable/lm_fujinde" />
+
+        <TextView
+            android:id="@id/lmsj_frame_city"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/lmsj_ditu_2_3"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="13.0sp" />
+
+        <ImageView
+            android:id="@id/lmsj_frame_cityImg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/lmsj_frame_city"
+            android:src="@drawable/lm_iamwhere" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.mall.widget.DropDownMenu
+            android:id="@+id/dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/wifioff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/wifioff"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/hotel_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hotel_room" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/hotel_name"
+                        android:layout_width="fill_parent"
+                        android:minHeight="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:text="豪华城景房"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:id="@+id/star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="[五星级]"
+                            android:textColor="@color/resutrant"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="4.2分"
+                            android:textColor="@color/headertop"
+                            android:textSize="14sp" />
+                        <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="right"
+                        android:gravity="right" >
+
+                        <TextView
+                            android:id="@+id/hotel_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥1494"
+                            android:textColor="@color/price_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="1dp"
+                            android:gravity="bottom"
+                            android:text="起"
+                            android:textColor="@color/resutrant"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+                    </LinearLayout>
+
+                  
+                </LinearLayout>
+                
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:orientation="horizontal">
+                  <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/how_far"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:drawableLeft="@drawable/resturant_map_location"
+                            android:gravity="center_vertical"
+                            android:text="距离成都如家快捷酒店（春熙路王府井店）1211.000公里"
+                            android:textColor="@color/resutrant"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

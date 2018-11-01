@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="activity"
+            type="com.mall.view.carMall.CarRightActivity" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:context="com.mall.view.carMall.CarRightActivity">
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="125px"
+            android:background="#FF2145">
+
+            <ImageView
+                android:id="@+id/top_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:onClick="@{(v)->activity.finish()}"
+                android:paddingLeft="38px"
+                android:paddingRight="38px"
+                android:src="@drawable/community_topback_selector" />
+
+            <TextView
+                android:id="@+id/handertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="确认成功"
+                android:textColor="@color/bg"
+                android:textSize="50px" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="133px"
+            android:gravity="center"
+            android:text="恭喜! \n你已成功提交拼车排队申请"
+            android:textColor="#FD0F2B"
+            android:textSize="48px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="126px"
+            android:background="#F3F3F3"
+            android:orientation="vertical"
+            android:paddingBottom="56px"
+            android:paddingLeft="49px"
+            android:paddingTop="56px">
+
+            <TextView
+                android:id="@+id/subminttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交时间为:"
+                android:textColor="#5A5A5A"
+                android:textSize="36px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36px"
+                android:layout_marginTop="36px"
+                android:text="系统将会在第15天自动生成排队单号"
+                android:textColor="#5A5A5A"
+                android:textSize="36px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可到会员中心-创客专车-我的单号查看"
+                android:textColor="#5A5A5A"
+                android:textSize="36px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="158px"
+            android:elevation="5px"
+            android:gravity="center"
+            android:paddingBottom="43px"
+            android:paddingLeft="66px"
+            android:paddingRight="66px"
+            android:paddingTop="43px"
+            android:text="去看看有没有我喜欢的车"
+            android:textColor="#FFFFFF"
+            android:textSize="48px" />
+
+    </LinearLayout>
+</layout>
+

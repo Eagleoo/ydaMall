@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/new_dibu_touming"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/maincolor" >
+
+            <TextView
+                android:id="@+id/top_back"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/community_topback_selector"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="重要记事"
+                android:textColor="@color/bg"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/add_new_js"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/note_add"
+                android:textColor="@color/bg"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/add_new_js"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/note_search" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/maincolor"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/mynote_biankuang"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/fi_jishi"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/jishi_L"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/note_top_check"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/jishi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:background="@color/bg"
+                        android:gravity="center|center_vertical"
+                        android:text="我的记事"
+                        android:textColor="@color/maincolor" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bg" >
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fi_tixing"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/tixing_L"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/note_top_check"
+                        android:orientation="vertical"
+                        android:visibility="invisible" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tixing"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center|center_vertical"
+                        android:text="提醒"
+                        android:textColor="@color/bg" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bg" >
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fi_rili"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/rili_L"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/note_top_check"
+                        android:orientation="vertical"
+                        android:visibility="invisible" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/rili"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|center_vertical"
+                        android:text="日历"
+                        android:textColor="@color/bg" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/new_dibu_touming" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:background="@drawable/new_dibu_touming"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</TabHost>

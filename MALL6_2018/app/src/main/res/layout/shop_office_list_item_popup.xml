@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:background="@drawable/layout_width_no_corner"
+        android:gravity="center_horizontal"
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="5dp"
+        android:orientation="vertical" >  
+
+        <LinearLayout
+            android:id="@+id/my"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mybranch_dianji"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/store"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="收藏"
+                android:background="@drawable/mybranch_dianji"
+                android:textColor="@color/black_gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="right"
+            android:background="#ebebeb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mybranch_dianji"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/mybranch_dianji"
+                android:gravity="center"
+                android:text="发起会话"
+                android:textColor="@color/black_gray"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="right"
+            android:background="#ebebeb" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mybranch_dianji"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/in_office"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="进入空间"
+                android:background="@drawable/mybranch_dianji"
+                android:textColor="@color/black_gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

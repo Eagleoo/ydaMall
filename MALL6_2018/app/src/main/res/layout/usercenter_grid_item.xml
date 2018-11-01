@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            
+               <ImageView 
+                 android:id="@+id/x_gride_im"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/user_my_shuju1"
+                 android:scaleType="center"
+                 />
+            
+             <TextView
+            android:id="@+id/x_gride_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="待付款"
+            android:background="@drawable/mybranch_dianji"
+            android:textColor="#7a7a7a"
+            android:textSize="12sp" />
+          
+        </LinearLayout>
+
+       
+
+        <com.readystatesoftware.viewbadger.BadgeView
+            android:id="@+id/bad_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="0"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            >
+        </com.readystatesoftware.viewbadger.BadgeView>
+    </FrameLayout>
+
+</LinearLayout>

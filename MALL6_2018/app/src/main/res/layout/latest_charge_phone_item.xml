@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    >
+    <TextView 
+        android:id="@+id/latest_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+      
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="18190910022"
+         android:layout_marginLeft="15dp"
+         android:gravity="center"
+        />
+    <TextView 
+        android:id="@+id/latest_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="休息休息"
+        android:textSize="13sp"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/gray"
+       
+        />
+    <ImageView 
+        android:layout_width="16dp"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/latest_close"
+        android:src="@drawable/latest_charge_phone_close"
+        android:layout_marginRight="20dp"
+        />
+   
+    
+
+</LinearLayout>

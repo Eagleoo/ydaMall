@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/top"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/liner_border_white">
+
+                <TableRow
+                    android:id="@+id/line1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="辅导老师："
+                        android:textColor="#ff535353" />
+
+                    <EditText
+                        android:id="@+id/alliance_zsdw"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/liner_border_white"
+                        android:hint="请填写您的辅导老师"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:textColor="#535353"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/request_alliance_name_line_row"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/request_alliance_name_line"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="辅导老师："
+                        android:textColor="#c6c6c6"
+                        android:visibility="gone" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="开通金额："
+                        android:textColor="#ff535353" />
+
+                    <EditText
+                        android:id="@+id/alliance_money"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/liner_border_white"
+                        android:ellipsize="end"
+                        android:hint="首次充值1000元以上可自助开通"
+                        android:inputType="textPhonetic"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="#eb3201"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="13sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/liner2_bottom_border"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.6"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="5dp"
+                        android:text="申请方式："
+                        android:textColor="#ff535353"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/jiameng"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:drawableLeft="@drawable/pay_item_checked"
+                        android:gravity="left"
+                        android:lines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="充值开通"
+                        android:textColor="#414141"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/jindai"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:drawableLeft="@drawable/pay_item_no_checked"
+                        android:gravity="left"
+                        android:lines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="系统开户费"
+                        android:textColor="#414141"
+                        android:textSize="13sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/lmsj_type_kaihu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="系统开户费" />
+
+                    <RadioButton
+                        android:id="@+id/lmsj_type_chongzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="充值开通" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/lmsj_payMoney_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5.0dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="首次充值3000以上自助开通，获得充值金额5倍商币、5倍消费券。 (注：首次充值最少充值300或以上的整数)"
+                        android:textColor="#ff535353" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="支付方式："
+                android:textColor="#ff535353" />
+
+            <include
+                layout="@layout/pay_money_type_style2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/liner_border_white">
+
+                <TableRow
+                    android:id="@+id/alliance_twoLine____1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip">
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="交易密码："
+                        android:textColor="#ff535353" />
+
+                    <EditText
+                        android:id="@+id/alliance_two"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:background="@drawable/liner_border_white"
+                        android:hint="请输入您的交易密码"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:textColor="#535353"
+                        android:textColorHint="#c6c6c6"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/community_cb_check_selector"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10.0dip">
+
+                <Button
+                    android:id="@+id/alliance_submit"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_submit_background"
+                    android:text="确认"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/alliance_clear"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_reset_background"
+                    android:text="重置"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

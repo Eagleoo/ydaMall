@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffeeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp" 
+        >
+        
+        
+        <ImageView
+            android:id="@+id/titleleft_iv" 
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/red"
+            android:layout_gravity="center_vertical"
+        	
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="微商产品"
+                        android:layout_gravity="center_vertical"
+            android:textColor="@color/new_dazi"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="更多>>"
+                        android:layout_gravity="center_vertical"
+            android:textColor="@color/new_dazi"
+            android:textSize="13.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:id="@+id/tv_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#ff707070"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:adjustViewBounds="true" 
+                android:src="@drawable/new_yda__top_zanwu" />
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ffeeeeee" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#ff707070"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:adjustViewBounds="true" 
+                    android:src="@drawable/new_yda__top_zanwu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffeeeeee" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_title_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#ff707070"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:adjustViewBounds="true" 
+                    android:src="@drawable/new_yda__top_zanwu" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal" >
+        
+          
+          
+          
+                 <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_title_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#ff707070"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/iv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:adjustViewBounds="true" 
+                    android:src="@drawable/new_yda__top_zanwu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ffeeeeee" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120.0dip"
+                android:background="#ffffffff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="8.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_title_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#ff707070"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/iv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:adjustViewBounds="true" 
+                    android:src="@drawable/new_yda__top_zanwu" />
+            </LinearLayout>
+        </LinearLayout>
+
+       
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#ffeeeeee" >
+        </LinearLayout>
+        
+       
+        
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:id="@+id/tv_title_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#ff707070"
+                android:textSize="13.0sp" />
+
+            <ImageView
+                android:id="@+id/iv_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:adjustViewBounds="true" 
+                android:src="@drawable/new_yda__top_zanwu" />
+          
+        </LinearLayout>
+        
+
+ 
+    </LinearLayout>
+
+</LinearLayout>

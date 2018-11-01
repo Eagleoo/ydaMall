@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="505px"
+            android:layout_height="569px"
+            android:layout_marginRight="23px"
+            android:layout_marginBottom="23px"
+            />
+
+
+
+    </RelativeLayout>
+</layout>

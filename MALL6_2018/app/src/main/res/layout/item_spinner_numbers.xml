@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="5dip" >
+    
+
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="0dip"
+        android:layout_height="30dp"
+        android:textColor="#7c7b7b"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/pay_item_no_checked"
+        android:layout_weight="1"
+        android:text="dwedw" />
+
+   
+
+</LinearLayout>
